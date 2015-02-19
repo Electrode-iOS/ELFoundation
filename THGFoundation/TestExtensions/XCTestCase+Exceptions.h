@@ -17,7 +17,25 @@
 
 @interface XCTestCase (Exceptions)
 
+/*
+ Replacement for the stock objc XCTAssertThrows, which is unavailable in Swift.
+ 
+ :param: block The block to execute.
+ :param: message The message to be displayed on failure to throw an exception.
+ 
+ Example (Swift): XCTAssertThrows({ testThrow() }, "This method should've thrown an exception!")
+ */
 - (void)XCTAssertThrows:(void (^)(void))block :(NSString *)message;
+
+/*
+ Replacement for the stock objc XCTAssertThrowsSpecific, which is unavailable in Swift.
+ 
+ :param: block The block to execute.
+ :param: name The name of the assertion to look for.
+ :param: message The message to be displayed on failure to throw an exception.
+ 
+ Example (Swift): XCTAssertThrowsSpecific({ testThrow() }, "THG", "This method should've thrown a THG exception!")
+ */
 - (void)XCTAssertThrowsSpecific:(void (^)(void))block :(NSString *)name :(NSString *)message;
 
 @end
