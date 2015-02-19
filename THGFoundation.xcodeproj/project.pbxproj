@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CACF2A101A9614D20084EFAE /* THGFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = CACF2A0F1A9614D20084EFAE /* THGFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA8804281A962E7000C00CAE /* NSBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8804271A962E7000C00CAE /* NSBundle.swift */; };
+		CA8804401A96327B00C00CAE /* Exceptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88043F1A96327B00C00CAE /* Exceptions.swift */; };
 		CACF2A161A9614D20084EFAE /* THGFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CACF2A0A1A9614D20084EFAE /* THGFoundation.framework */; };
 		CACF2A1D1A9614D20084EFAE /* THGFoundationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF2A1C1A9614D20084EFAE /* THGFoundationTests.swift */; };
-		CACF2A271A9615DB0084EFAE /* Extensions in Resources */ = {isa = PBXBuildFile; fileRef = CACF2A261A9615DB0084EFAE /* Extensions */; };
-		CACF2A2B1A96164B0084EFAE /* TestExtensions in Resources */ = {isa = PBXBuildFile; fileRef = CACF2A2A1A96164B0084EFAE /* TestExtensions */; };
 		CACF2A2E1A961C2D0084EFAE /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = CACF2A2C1A961C120084EFAE /* LICENSE */; };
+		CACF2A3F1A9624890084EFAE /* THGFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = CACF2A0F1A9614D20084EFAE /* THGFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,14 +26,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA8804271A962E7000C00CAE /* NSBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBundle.swift; sourceTree = "<group>"; };
+		CA8804321A962FCD00C00CAE /* XCTestCase+Exceptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XCTestCase+Exceptions.h"; sourceTree = "<group>"; };
+		CA8804331A962FCD00C00CAE /* XCTestCase+Exceptions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "XCTestCase+Exceptions.m"; sourceTree = "<group>"; };
+		CA88043F1A96327B00C00CAE /* Exceptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exceptions.swift; sourceTree = "<group>"; };
 		CACF2A0A1A9614D20084EFAE /* THGFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = THGFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CACF2A0E1A9614D20084EFAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CACF2A0F1A9614D20084EFAE /* THGFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THGFoundation.h; sourceTree = "<group>"; };
 		CACF2A151A9614D20084EFAE /* THGFoundationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = THGFoundationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CACF2A1B1A9614D20084EFAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CACF2A1C1A9614D20084EFAE /* THGFoundationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THGFoundationTests.swift; sourceTree = "<group>"; };
-		CACF2A261A9615DB0084EFAE /* Extensions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Extensions; sourceTree = "<group>"; };
-		CACF2A2A1A96164B0084EFAE /* TestExtensions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TestExtensions; sourceTree = "<group>"; };
 		CACF2A2C1A961C120084EFAE /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		CACF2A2D1A961C120084EFAE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,6 +59,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA8804261A962E7000C00CAE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CA8804271A962E7000C00CAE /* NSBundle.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CA8804301A962FCD00C00CAE /* TestExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				CA8804321A962FCD00C00CAE /* XCTestCase+Exceptions.h */,
+				CA8804331A962FCD00C00CAE /* XCTestCase+Exceptions.m */,
+			);
+			path = TestExtensions;
+			sourceTree = "<group>";
+		};
+		CA88043E1A96325400C00CAE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CA88043F1A96327B00C00CAE /* Exceptions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		CACF2A001A9614D20084EFAE = {
 			isa = PBXGroup;
 			children = (
@@ -81,8 +108,9 @@
 			isa = PBXGroup;
 			children = (
 				CACF2A0F1A9614D20084EFAE /* THGFoundation.h */,
-				CACF2A261A9615DB0084EFAE /* Extensions */,
-				CACF2A2A1A96164B0084EFAE /* TestExtensions */,
+				CA88043E1A96325400C00CAE /* Utilities */,
+				CA8804261A962E7000C00CAE /* Extensions */,
+				CA8804301A962FCD00C00CAE /* TestExtensions */,
 				CACF2A0D1A9614D20084EFAE /* Supporting Files */,
 			);
 			path = THGFoundation;
@@ -120,7 +148,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CACF2A101A9614D20084EFAE /* THGFoundation.h in Headers */,
+				CACF2A3F1A9624890084EFAE /* THGFoundation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,8 +232,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CACF2A2E1A961C2D0084EFAE /* LICENSE in Resources */,
-				CACF2A2B1A96164B0084EFAE /* TestExtensions in Resources */,
-				CACF2A271A9615DB0084EFAE /* Extensions in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +249,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA8804281A962E7000C00CAE /* NSBundle.swift in Sources */,
+				CA8804401A96327B00C00CAE /* Exceptions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
