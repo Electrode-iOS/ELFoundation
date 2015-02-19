@@ -12,6 +12,7 @@
 		CACF2A1D1A9614D20084EFAE /* THGFoundationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF2A1C1A9614D20084EFAE /* THGFoundationTests.swift */; };
 		CACF2A271A9615DB0084EFAE /* Extensions in Resources */ = {isa = PBXBuildFile; fileRef = CACF2A261A9615DB0084EFAE /* Extensions */; };
 		CACF2A2B1A96164B0084EFAE /* TestExtensions in Resources */ = {isa = PBXBuildFile; fileRef = CACF2A2A1A96164B0084EFAE /* TestExtensions */; };
+		CACF2A2E1A961C2D0084EFAE /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = CACF2A2C1A961C120084EFAE /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,8 @@
 		CACF2A1C1A9614D20084EFAE /* THGFoundationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THGFoundationTests.swift; sourceTree = "<group>"; };
 		CACF2A261A9615DB0084EFAE /* Extensions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Extensions; sourceTree = "<group>"; };
 		CACF2A2A1A96164B0084EFAE /* TestExtensions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TestExtensions; sourceTree = "<group>"; };
+		CACF2A2C1A961C120084EFAE /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		CACF2A2D1A961C120084EFAE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +60,8 @@
 		CACF2A001A9614D20084EFAE = {
 			isa = PBXGroup;
 			children = (
+				CACF2A2C1A961C120084EFAE /* LICENSE */,
+				CACF2A2D1A961C120084EFAE /* README.md */,
 				CACF2A0C1A9614D20084EFAE /* THGFoundation */,
 				CACF2A191A9614D20084EFAE /* THGFoundationTests */,
 				CACF2A0B1A9614D20084EFAE /* Products */,
@@ -198,6 +203,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CACF2A2E1A961C2D0084EFAE /* LICENSE in Resources */,
 				CACF2A2B1A96164B0084EFAE /* TestExtensions in Resources */,
 				CACF2A271A9615DB0084EFAE /* Extensions in Resources */,
 			);
@@ -405,6 +411,7 @@
 				CACF2A221A9614D20084EFAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CACF2A231A9614D20084EFAE /* Build configuration list for PBXNativeTarget "THGFoundationTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +420,7 @@
 				CACF2A251A9614D20084EFAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
