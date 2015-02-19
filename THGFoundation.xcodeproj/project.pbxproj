@@ -10,6 +10,8 @@
 		CACF2A101A9614D20084EFAE /* THGFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = CACF2A0F1A9614D20084EFAE /* THGFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CACF2A161A9614D20084EFAE /* THGFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CACF2A0A1A9614D20084EFAE /* THGFoundation.framework */; };
 		CACF2A1D1A9614D20084EFAE /* THGFoundationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF2A1C1A9614D20084EFAE /* THGFoundationTests.swift */; };
+		CACF2A271A9615DB0084EFAE /* Extensions in Resources */ = {isa = PBXBuildFile; fileRef = CACF2A261A9615DB0084EFAE /* Extensions */; };
+		CACF2A2B1A96164B0084EFAE /* TestExtensions in Resources */ = {isa = PBXBuildFile; fileRef = CACF2A2A1A96164B0084EFAE /* TestExtensions */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		CACF2A151A9614D20084EFAE /* THGFoundationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = THGFoundationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CACF2A1B1A9614D20084EFAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CACF2A1C1A9614D20084EFAE /* THGFoundationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THGFoundationTests.swift; sourceTree = "<group>"; };
+		CACF2A261A9615DB0084EFAE /* Extensions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Extensions; sourceTree = "<group>"; };
+		CACF2A2A1A96164B0084EFAE /* TestExtensions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TestExtensions; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				CACF2A0F1A9614D20084EFAE /* THGFoundation.h */,
+				CACF2A261A9615DB0084EFAE /* Extensions */,
+				CACF2A2A1A96164B0084EFAE /* TestExtensions */,
 				CACF2A0D1A9614D20084EFAE /* Supporting Files */,
 			);
 			path = THGFoundation;
@@ -192,6 +198,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CACF2A2B1A96164B0084EFAE /* TestExtensions in Resources */,
+				CACF2A271A9615DB0084EFAE /* Extensions in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
