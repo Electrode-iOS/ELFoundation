@@ -8,7 +8,7 @@
 
 import Foundation
 
-/*
+/**
 Mimics @synchronized(x) in Objective-C.  Synchronizes around the given object
 and executes the supplied closure.
 
@@ -23,7 +23,7 @@ public func synchronized(lock: AnyObject, closure: () -> Void) {
     objc_sync_exit(lock)
 }
 
-/*
+/**
 Mimics @synchronized(x) in Objective-C.  Synchronizes around the given object
 and executes the supplied closure, returning the type T.
 
@@ -41,7 +41,7 @@ public func synchronized<T>(lock: AnyObject, closure: () -> T) -> T {
 }
 
 
-/*
+/**
 OS Level Spin Lock class.  Wraps the OSSpinLock* functions to allow for
 synchronization around a specified closure.  This is very useful for properties
 where get/set need to be thread-safe.
@@ -52,7 +52,7 @@ final public class Spinlock {
         
     }
     
-    /*
+    /**
     Runs the specified closure within the spin lock.
     
     :param: closure Closure to execute inside of the lock.
@@ -63,7 +63,7 @@ final public class Spinlock {
         OSSpinLockUnlock(&lock)
     }
     
-    /*
+    /**
     Runs the specified closure within the spin lock, returning the type T.
     
     :param: closure Closure to execute inside of the lock.

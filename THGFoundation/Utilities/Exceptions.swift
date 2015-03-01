@@ -8,7 +8,10 @@
 
 import Foundation
 
-/*
+/**
+This function is intended to be used to catch programming errors and undefined code
+paths.  To handle unrecoverable errors, see 'assertionFailure'.
+
 Raises an exception and can be used on testable code.  This is to be used as an 
 alternative to assertionFailure(), which blows up tests.
 
@@ -18,5 +21,7 @@ alternative to assertionFailure(), which blows up tests.
 Example:  exceptionFailure("This object is invalid.  %@", obj)
 */
 public func exceptionFailure(format: String, arguments: CVarArgType...) {
-   NSException.raise("THGFoundationExceptionFailure", format: format, arguments: getVaList(arguments))
+#if DEBUG
+    NSException.raise("THGFoundationExceptionFailure", format: format, arguments: getVaList(arguments))
+#endif
 }

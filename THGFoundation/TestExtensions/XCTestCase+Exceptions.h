@@ -1,4 +1,4 @@
-/*
+/**
  
  These files are not to be included in any targets except test case targets.
  Simply drag them to your project and make sure only the Tests target is checked.
@@ -17,7 +17,7 @@
 
 @interface XCTestCase (Exceptions)
 
-/*
+/**
  Replacement for the stock objc XCTAssertThrows, which is unavailable in Swift.
  
  :param: block The block to execute.
@@ -27,7 +27,7 @@
  */
 - (void)XCTAssertThrows:(void (^)(void))block :(NSString *)message;
 
-/*
+/**
  Replacement for the stock objc XCTAssertThrowsSpecific, which is unavailable in Swift.
  
  :param: block The block to execute.
