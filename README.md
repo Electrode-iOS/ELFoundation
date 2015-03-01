@@ -1,5 +1,5 @@
 # Excalibur
-Foundational bits, extensions, etc.  This contains mostly generic functionality.
+Foundational bits, extensions, etc.  This project contains mostly generic functionality.
 
 ___
 
