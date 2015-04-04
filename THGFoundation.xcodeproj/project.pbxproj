@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA5C71871AD028D40030B2AC /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5C71861AD028D40030B2AC /* Array.swift */; };
+		CA5C71891AD031CE0030B2AC /* ArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5C71881AD031CE0030B2AC /* ArrayTests.swift */; };
 		CA8804281A962E7000C00CAE /* NSBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8804271A962E7000C00CAE /* NSBundle.swift */; };
 		CA8804401A96327B00C00CAE /* Exceptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88043F1A96327B00C00CAE /* Exceptions.swift */; };
 		CA8804431A969F7500C00CAE /* Synchronization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8804421A969F7500C00CAE /* Synchronization.swift */; };
@@ -30,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA5C71861AD028D40030B2AC /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		CA5C71881AD031CE0030B2AC /* ArrayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
 		CA8804271A962E7000C00CAE /* NSBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBundle.swift; sourceTree = "<group>"; };
 		CA8804321A962FCD00C00CAE /* XCTestCase+Exceptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XCTestCase+Exceptions.h"; sourceTree = "<group>"; };
 		CA8804331A962FCD00C00CAE /* XCTestCase+Exceptions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "XCTestCase+Exceptions.m"; sourceTree = "<group>"; };
@@ -74,6 +78,7 @@
 				CABA99931AC32EBE008D25B4 /* NSError.swift */,
 				CA9B9EB41AB764DB007E2B04 /* String.swift */,
 				CA9B9EB81AB7660A007E2B04 /* NSThread.swift */,
+				CA5C71861AD028D40030B2AC /* Array.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -140,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				CACF2A1C1A9614D20084EFAE /* THGFoundationTests.swift */,
+				CA5C71881AD031CE0030B2AC /* ArrayTests.swift */,
 				CACF2A1A1A9614D20084EFAE /* Supporting Files */,
 			);
 			path = THGFoundationTests;
@@ -263,6 +269,7 @@
 			files = (
 				CA8804281A962E7000C00CAE /* NSBundle.swift in Sources */,
 				CA8804401A96327B00C00CAE /* Exceptions.swift in Sources */,
+				CA5C71871AD028D40030B2AC /* Array.swift in Sources */,
 				CA9B9EB91AB7660A007E2B04 /* NSThread.swift in Sources */,
 				CA9B9EB51AB764DB007E2B04 /* String.swift in Sources */,
 				CA8804431A969F7500C00CAE /* Synchronization.swift in Sources */,
@@ -275,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CACF2A1D1A9614D20084EFAE /* THGFoundationTests.swift in Sources */,
+				CA5C71891AD031CE0030B2AC /* ArrayTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
