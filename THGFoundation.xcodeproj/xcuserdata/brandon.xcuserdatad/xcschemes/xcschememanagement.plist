@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>THGFoundation_osx.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>CA24103C1AF965B700AA4410</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>CACF2A091A9614D20084EFAE</key>
 		<dict>
 			<key>primary</key>
