@@ -11,7 +11,7 @@ THG projects are designed to live side-by-side in the file system.  ie:
 * \MyProject\Excalibur
 * \MyProject\KillerRabbit
 
-We use an experimental tool called Modulo for dependency management.  It doesn't require Xcode workspaces, mess with your project, or have arcane config files that break every release, it's simple JSON.  It also doesn't require your dependencies to use Modulo either.  If you're using Modulo, you can also link to an existing git repo that doesn't use Modulo, it doesn't care.
+We use an experimental tool called [Modulo](https://github.com/setdirection/modulo) for dependency management.  It doesn't require Xcode workspaces, mess with your project, or have arcane config files that break every release, it's simple JSON.  It also doesn't require your dependencies to use Modulo either.  If you're using Modulo, you can also link to an existing git repo that doesn't use Modulo, it doesn't care.
 
 That being said.. you don't have to use Modulo!  You can simple add both of these github projects as submodules and it'll work just the same.
 
