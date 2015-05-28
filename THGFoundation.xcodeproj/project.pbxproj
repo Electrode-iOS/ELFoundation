@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17316C141B174A940019A75C /* THGFoundation.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CACF2A0A1A9614D20084EFAE /* THGFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CA24103E1AF965B700AA4410 /* NSBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8804271A962E7000C00CAE /* NSBundle.swift */; };
 		CA24103F1AF965B700AA4410 /* Exceptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88043F1A96327B00C00CAE /* Exceptions.swift */; };
 		CA2410401AF965B700AA4410 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5C71861AD028D40030B2AC /* Array.swift */; };
@@ -39,6 +40,19 @@
 			remoteInfo = THGFoundation;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		17316C131B174A830019A75C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				17316C141B174A940019A75C /* THGFoundation.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CA24104D1AF965B700AA4410 /* THGFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = THGFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -244,6 +258,7 @@
 				CACF2A111A9614D20084EFAE /* Sources */,
 				CACF2A121A9614D20084EFAE /* Frameworks */,
 				CACF2A131A9614D20084EFAE /* Resources */,
+				17316C131B174A830019A75C /* CopyFiles */,
 			);
 			buildRules = (
 			);
