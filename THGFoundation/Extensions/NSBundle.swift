@@ -15,14 +15,14 @@ public extension NSBundle {
     /**
     Returns the reverse DNS style bundle identifier
 
-    :returns: The reverse DNS style bundle identifier
+    - returns: The reverse DNS style bundle identifier
     
     Example: com.theholygrail.thgfoundation
     */
     public func reverseBundleIdentifier() -> String? {
         if let id = bundleIdentifier {
             let components: [String] = id.componentsSeparatedByString(".")
-            components.reverse()
+            Array(components.reverse())
             let result = ".".join(components)
             return result
         }

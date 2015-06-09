@@ -13,17 +13,16 @@ import Foundation
 /**
 Creates a new array by removing `items` from `fromArray`
 
-:param: items Array of items to remove.
-:param: fromArray Array to remove items from.
-:returns: A new array with the specified items removed.
+- parameter items: Array of items to remove.
+- parameter fromArray: Array to remove items from.
+- returns: A new array with the specified items removed.
 */
-public func arrayByRemoving<T: Equatable>(#items: Array<T>, #fromArray: Array<T>) -> Array<T> {
+public func arrayByRemoving<T: Equatable>(items items: Array<T>, fromArray: Array<T>) -> Array<T> {
     var result = fromArray
 
     for index in 0..<items.count {
         let item = items[index]
-        let found = find(result, item)
-        if let found = found {
+        if let found = result.indexOf(item) {
             result.removeAtIndex(found)
         }
     }

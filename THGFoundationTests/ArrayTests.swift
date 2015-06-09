@@ -38,8 +38,8 @@ class ArrayTests: XCTestCase {
         let item5 = Item(value: "5")
         let item6 = Item(value: "6")
 
-        var items = [item1, item4, item5]
-        var array = [item1, item2, item3, item4, item6]
+        let items = [item1, item4, item5]
+        let array = [item1, item2, item3, item4, item6]
 
         // result should have item2, item3, and item6 in it.
         // it should skip over item5 entirely since it's not in 'array'.

@@ -15,8 +15,8 @@ paths.  To handle unrecoverable errors, see 'assertionFailure'.
 Raises an exception and can be used on testable code.  This is to be used as an 
 alternative to assertionFailure(), which blows up tests.
 
-:param: format Format string to be used.
-:param: arguments Argument list to be used in the format string.
+- parameter format: Format string to be used.
+- parameter arguments: Argument list to be used in the format string.
 
 Example:  exceptionFailure("This object is invalid.  %@", obj)
 */

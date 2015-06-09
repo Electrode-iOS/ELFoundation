@@ -12,8 +12,8 @@ import Foundation
 Mimics @synchronized(x) in Objective-C.  Synchronizes around the given object
 and executes the supplied closure.
 
-:param: lock Object to lock around.
-:param: closure Closure to execute inside of the lock.
+- parameter lock: Object to lock around.
+- parameter closure: Closure to execute inside of the lock.
 
 Example: synchronized(self) { doSomething() }
 */
@@ -27,9 +27,9 @@ public func synchronized(lock: AnyObject, closure: () -> Void) {
 Mimics @synchronized(x) in Objective-C.  Synchronizes around the given object
 and executes the supplied closure, returning the type T.
 
-:param: lock Object to lock around.
-:param: closure Closure to execute inside of the lock.
-:returns: The result of the closure.
+- parameter lock: Object to lock around.
+- parameter closure: Closure to execute inside of the lock.
+- returns: The result of the closure.
 
 Example: let running = synchronized(self) { return true }
 */
@@ -55,7 +55,7 @@ final public class Spinlock {
     /**
     Runs the specified closure within the spin lock.
     
-    :param: closure Closure to execute inside of the lock.
+    - parameter closure: Closure to execute inside of the lock.
     */
     public func around(closure: () -> Void) {
         OSSpinLockLock(&lock)
@@ -66,8 +66,8 @@ final public class Spinlock {
     /**
     Runs the specified closure within the spin lock, returning the type T.
     
-    :param: closure Closure to execute inside of the lock.
-    :returns: The result of the closure.
+    - parameter closure: Closure to execute inside of the lock.
+    - returns: The result of the closure.
     */
     public func around<T>(closure: () -> T) -> T {
         OSSpinLockLock(&lock)
