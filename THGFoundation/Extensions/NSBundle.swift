@@ -22,8 +22,8 @@ public extension NSBundle {
     public func reverseBundleIdentifier() -> String? {
         if let id = bundleIdentifier {
             let components: [String] = id.componentsSeparatedByString(".")
-            Array(components.reverse())
-            let result = ".".join(components)
+            let reverseComponents = Array(components.reverse())
+            let result = ".".join(reverseComponents)
             return result
         }
         
