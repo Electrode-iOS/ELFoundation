@@ -9,6 +9,11 @@
 import Foundation
 
 /**
+The name of the exception thrown by 'exceptionFailture(..)'.
+*/
+public let THGExceptionFailure = "THGExceptionFailure"
+
+/**
 This function is intended to be used to catch programming errors and undefined code
 paths.  To handle unrecoverable errors, see 'assertionFailure'.
 
@@ -20,8 +25,13 @@ alternative to assertionFailure(), which blows up tests.
 
 Example:  exceptionFailure("This object is invalid.  %@", obj)
 */
-public func exceptionFailure(format: String, arguments: CVarArgType...) {
-#if DEBUG
-    NSException.raise("THGFoundationExceptionFailure", format: format, arguments: getVaList(arguments))
-#endif
+public func exceptionFailure(message: String) {
+    if isInUnitTest() {
+        NSException.raise(THGExceptionFailure, format: message, arguments: CVaListPointer(_fromUnsafeMutablePointer: nil))
+        //NSException.raise("THGFoundationExceptionFailure", format: format, arguments: nil)
+    } else {
+        #if DEBUG
+        NSException.raise(THGExceptionFailure, format: message, arguments: CVaListPointer(_fromUnsafeMutablePointer: nil))
+        #endif
+    }
 }
