@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CA24103C1AF965B700AA4410"
-               BuildableName = "THGFoundation.framework"
+               BlueprintIdentifier = "CA8CD5591B7A9DCA00DA8BF7"
+               BuildableName = "THGFoundation_osx.framework"
                BlueprintName = "THGFoundation_osx"
                ReferencedContainer = "container:THGFoundation.xcodeproj">
             </BuildableReference>
@@ -45,8 +45,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CA24103C1AF965B700AA4410"
-            BuildableName = "THGFoundation.framework"
+            BlueprintIdentifier = "CA8CD5591B7A9DCA00DA8BF7"
+            BuildableName = "THGFoundation_osx.framework"
             BlueprintName = "THGFoundation_osx"
             ReferencedContainer = "container:THGFoundation.xcodeproj">
          </BuildableReference>
@@ -63,8 +63,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CA24103C1AF965B700AA4410"
-            BuildableName = "THGFoundation.framework"
+            BlueprintIdentifier = "CA8CD5591B7A9DCA00DA8BF7"
+            BuildableName = "THGFoundation_osx.framework"
             BlueprintName = "THGFoundation_osx"
             ReferencedContainer = "container:THGFoundation.xcodeproj">
          </BuildableReference>

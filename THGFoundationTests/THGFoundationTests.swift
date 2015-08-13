@@ -6,7 +6,6 @@
 //  Copyright (c) 2015 TheHolyGrail. All rights reserved.
 //
 
-import UIKit
 import XCTest
 
 class THGFoundationTests: XCTestCase {

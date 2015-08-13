@@ -9,20 +9,27 @@
 /* Begin PBXBuildFile section */
 		17316C141B174A940019A75C /* THGFoundation.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CACF2A0A1A9614D20084EFAE /* THGFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		200045851B4CA4FE005C861B /* NSBundleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200045841B4CA4FE005C861B /* NSBundleTests.swift */; };
-		CA24103E1AF965B700AA4410 /* NSBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8804271A962E7000C00CAE /* NSBundle.swift */; };
-		CA24103F1AF965B700AA4410 /* Exceptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88043F1A96327B00C00CAE /* Exceptions.swift */; };
-		CA2410401AF965B700AA4410 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5C71861AD028D40030B2AC /* Array.swift */; };
-		CA2410411AF965B700AA4410 /* NSThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9B9EB81AB7660A007E2B04 /* NSThread.swift */; };
-		CA2410421AF965B700AA4410 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9B9EB41AB764DB007E2B04 /* String.swift */; };
-		CA2410431AF965B700AA4410 /* Synchronization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8804421A969F7500C00CAE /* Synchronization.swift */; };
-		CA2410441AF965B700AA4410 /* NSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA99931AC32EBE008D25B4 /* NSError.swift */; };
-		CA2410471AF965B700AA4410 /* THGFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = CACF2A0F1A9614D20084EFAE /* THGFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CA2410491AF965B700AA4410 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = CACF2A2C1A961C120084EFAE /* LICENSE */; };
 		CA5C71871AD028D40030B2AC /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5C71861AD028D40030B2AC /* Array.swift */; };
 		CA5C71891AD031CE0030B2AC /* ArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5C71881AD031CE0030B2AC /* ArrayTests.swift */; };
 		CA8804281A962E7000C00CAE /* NSBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8804271A962E7000C00CAE /* NSBundle.swift */; };
 		CA8804401A96327B00C00CAE /* Exceptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88043F1A96327B00C00CAE /* Exceptions.swift */; };
 		CA8804431A969F7500C00CAE /* Synchronization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8804421A969F7500C00CAE /* Synchronization.swift */; };
+		CA8CD53B1B7A992C00DA8BF7 /* ObjectAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8CD53A1B7A992C00DA8BF7 /* ObjectAssociation.swift */; };
+		CA8CD55D1B7A9DCA00DA8BF7 /* THGFoundation_osx.h in Headers */ = {isa = PBXBuildFile; fileRef = CA8CD55C1B7A9DCA00DA8BF7 /* THGFoundation_osx.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA8CD5641B7A9DCB00DA8BF7 /* THGFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8CD55A1B7A9DCA00DA8BF7 /* THGFoundation.framework */; };
+		CA8CD5711B7A9DE300DA8BF7 /* THGFoundationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF2A1C1A9614D20084EFAE /* THGFoundationTests.swift */; };
+		CA8CD5721B7A9DE600DA8BF7 /* ArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5C71881AD031CE0030B2AC /* ArrayTests.swift */; };
+		CA8CD5731B7A9DE900DA8BF7 /* NSBundleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200045841B4CA4FE005C861B /* NSBundleTests.swift */; };
+		CA8CD57E1B7A9F4700DA8BF7 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5C71861AD028D40030B2AC /* Array.swift */; };
+		CA8CD57F1B7A9F4A00DA8BF7 /* NSThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9B9EB81AB7660A007E2B04 /* NSThread.swift */; };
+		CA8CD5801B7A9F4C00DA8BF7 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9B9EB41AB764DB007E2B04 /* String.swift */; };
+		CA8CD5811B7A9F4F00DA8BF7 /* NSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA99931AC32EBE008D25B4 /* NSError.swift */; };
+		CA8CD5821B7A9F5200DA8BF7 /* NSBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8804271A962E7000C00CAE /* NSBundle.swift */; };
+		CA8CD5831B7A9F5600DA8BF7 /* ObjectAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8CD53A1B7A992C00DA8BF7 /* ObjectAssociation.swift */; };
+		CA8CD5841B7A9F5800DA8BF7 /* Synchronization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8804421A969F7500C00CAE /* Synchronization.swift */; };
+		CA8CD5851B7A9F5C00DA8BF7 /* Exceptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88043F1A96327B00C00CAE /* Exceptions.swift */; };
+		CA8CD5901B7D42DB00DA8BF7 /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8CD58F1B7D42DB00DA8BF7 /* TestHelper.swift */; };
+		CA8CD5911B7D43C700DA8BF7 /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8CD58F1B7D42DB00DA8BF7 /* TestHelper.swift */; };
 		CA9B9EB51AB764DB007E2B04 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9B9EB41AB764DB007E2B04 /* String.swift */; };
 		CA9B9EB91AB7660A007E2B04 /* NSThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9B9EB81AB7660A007E2B04 /* NSThread.swift */; };
 		CABA99941AC32EBE008D25B4 /* NSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA99931AC32EBE008D25B4 /* NSError.swift */; };
@@ -33,6 +40,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CA8CD5651B7A9DCB00DA8BF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CACF2A011A9614D20084EFAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA8CD5591B7A9DCA00DA8BF7;
+			remoteInfo = THGFoundation_osx;
+		};
 		CACF2A171A9614D20084EFAE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CACF2A011A9614D20084EFAE /* Project object */;
@@ -57,7 +71,6 @@
 
 /* Begin PBXFileReference section */
 		200045841B4CA4FE005C861B /* NSBundleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBundleTests.swift; sourceTree = "<group>"; };
-		CA24104D1AF965B700AA4410 /* THGFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = THGFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA24104E1AF965B700AA4410 /* THGFoundation copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "THGFoundation copy-Info.plist"; path = "/Users/brandon/work/Libraries/Excalibur/THGFoundation copy-Info.plist"; sourceTree = "<absolute>"; };
 		CA5C71861AD028D40030B2AC /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		CA5C71881AD031CE0030B2AC /* ArrayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
@@ -66,6 +79,13 @@
 		CA8804331A962FCD00C00CAE /* XCTestCase+Exceptions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "XCTestCase+Exceptions.m"; sourceTree = "<group>"; };
 		CA88043F1A96327B00C00CAE /* Exceptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exceptions.swift; sourceTree = "<group>"; };
 		CA8804421A969F7500C00CAE /* Synchronization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Synchronization.swift; sourceTree = "<group>"; };
+		CA8CD53A1B7A992C00DA8BF7 /* ObjectAssociation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectAssociation.swift; sourceTree = "<group>"; };
+		CA8CD55A1B7A9DCA00DA8BF7 /* THGFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = THGFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA8CD55C1B7A9DCA00DA8BF7 /* THGFoundation_osx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THGFoundation_osx.h; sourceTree = "<group>"; };
+		CA8CD55E1B7A9DCA00DA8BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA8CD5631B7A9DCB00DA8BF7 /* THGFoundation_osxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = THGFoundation_osxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA8CD56A1B7A9DCB00DA8BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA8CD58F1B7D42DB00DA8BF7 /* TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
 		CA9B9EB41AB764DB007E2B04 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		CA9B9EB81AB7660A007E2B04 /* NSThread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSThread.swift; sourceTree = "<group>"; };
 		CABA99931AC32EBE008D25B4 /* NSError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSError.swift; sourceTree = "<group>"; };
@@ -80,10 +100,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CA2410451AF965B700AA4410 /* Frameworks */ = {
+		CA8CD5561B7A9DCA00DA8BF7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA8CD5601B7A9DCB00DA8BF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA8CD5641B7A9DCB00DA8BF7 /* THGFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +150,7 @@
 			children = (
 				CA8804321A962FCD00C00CAE /* XCTestCase+Exceptions.h */,
 				CA8804331A962FCD00C00CAE /* XCTestCase+Exceptions.m */,
+				CA8CD58F1B7D42DB00DA8BF7 /* TestHelper.swift */,
 			);
 			path = TestExtensions;
 			sourceTree = "<group>";
@@ -131,8 +160,26 @@
 			children = (
 				CA88043F1A96327B00C00CAE /* Exceptions.swift */,
 				CA8804421A969F7500C00CAE /* Synchronization.swift */,
+				CA8CD53A1B7A992C00DA8BF7 /* ObjectAssociation.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CA8CD55B1B7A9DCA00DA8BF7 /* THGFoundation_osx */ = {
+			isa = PBXGroup;
+			children = (
+				CA8CD55C1B7A9DCA00DA8BF7 /* THGFoundation_osx.h */,
+				CA8CD55E1B7A9DCA00DA8BF7 /* Info.plist */,
+			);
+			path = THGFoundation_osx;
+			sourceTree = "<group>";
+		};
+		CA8CD5671B7A9DCB00DA8BF7 /* THGFoundation_osxTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA8CD56A1B7A9DCB00DA8BF7 /* Info.plist */,
+			);
+			path = THGFoundation_osxTests;
 			sourceTree = "<group>";
 		};
 		CACF2A001A9614D20084EFAE = {
@@ -142,6 +189,8 @@
 				CACF2A2D1A961C120084EFAE /* README.md */,
 				CACF2A0C1A9614D20084EFAE /* THGFoundation */,
 				CACF2A191A9614D20084EFAE /* THGFoundationTests */,
+				CA8CD55B1B7A9DCA00DA8BF7 /* THGFoundation_osx */,
+				CA8CD5671B7A9DCB00DA8BF7 /* THGFoundation_osxTests */,
 				CACF2A0B1A9614D20084EFAE /* Products */,
 				CA24104E1AF965B700AA4410 /* THGFoundation copy-Info.plist */,
 			);
@@ -152,7 +201,8 @@
 			children = (
 				CACF2A0A1A9614D20084EFAE /* THGFoundation.framework */,
 				CACF2A151A9614D20084EFAE /* THGFoundationTests.xctest */,
-				CA24104D1AF965B700AA4410 /* THGFoundation.framework */,
+				CA8CD55A1B7A9DCA00DA8BF7 /* THGFoundation.framework */,
+				CA8CD5631B7A9DCB00DA8BF7 /* THGFoundation_osxTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -199,11 +249,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		CA2410461AF965B700AA4410 /* Headers */ = {
+		CA8CD5571B7A9DCA00DA8BF7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA2410471AF965B700AA4410 /* THGFoundation.h in Headers */,
+				CA8CD55D1B7A9DCA00DA8BF7 /* THGFoundation_osx.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,23 +268,41 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		CA24103C1AF965B700AA4410 /* THGFoundation_osx */ = {
+		CA8CD5591B7A9DCA00DA8BF7 /* THGFoundation_osx */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CA24104A1AF965B700AA4410 /* Build configuration list for PBXNativeTarget "THGFoundation_osx" */;
+			buildConfigurationList = CA8CD56B1B7A9DCB00DA8BF7 /* Build configuration list for PBXNativeTarget "THGFoundation_osx" */;
 			buildPhases = (
-				CA24103D1AF965B700AA4410 /* Sources */,
-				CA2410451AF965B700AA4410 /* Frameworks */,
-				CA2410461AF965B700AA4410 /* Headers */,
-				CA2410481AF965B700AA4410 /* Resources */,
+				CA8CD5551B7A9DCA00DA8BF7 /* Sources */,
+				CA8CD5561B7A9DCA00DA8BF7 /* Frameworks */,
+				CA8CD5571B7A9DCA00DA8BF7 /* Headers */,
+				CA8CD5581B7A9DCA00DA8BF7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = THGFoundation_osx;
-			productName = THGFoundation;
-			productReference = CA24104D1AF965B700AA4410 /* THGFoundation.framework */;
+			productName = THGFoundation_osx;
+			productReference = CA8CD55A1B7A9DCA00DA8BF7 /* THGFoundation.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		CA8CD5621B7A9DCB00DA8BF7 /* THGFoundation_osxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA8CD56E1B7A9DCB00DA8BF7 /* Build configuration list for PBXNativeTarget "THGFoundation_osxTests" */;
+			buildPhases = (
+				CA8CD55F1B7A9DCB00DA8BF7 /* Sources */,
+				CA8CD5601B7A9DCB00DA8BF7 /* Frameworks */,
+				CA8CD5611B7A9DCB00DA8BF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA8CD5661B7A9DCB00DA8BF7 /* PBXTargetDependency */,
+			);
+			name = THGFoundation_osxTests;
+			productName = THGFoundation_osxTests;
+			productReference = CA8CD5631B7A9DCB00DA8BF7 /* THGFoundation_osxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		CACF2A091A9614D20084EFAE /* THGFoundation */ = {
 			isa = PBXNativeTarget;
@@ -283,6 +351,12 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = TheHolyGrail;
 				TargetAttributes = {
+					CA8CD5591B7A9DCA00DA8BF7 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					CA8CD5621B7A9DCB00DA8BF7 = {
+						CreatedOnToolsVersion = 7.0;
+					};
 					CACF2A091A9614D20084EFAE = {
 						CreatedOnToolsVersion = 6.3;
 					};
@@ -305,17 +379,24 @@
 			targets = (
 				CACF2A091A9614D20084EFAE /* THGFoundation */,
 				CACF2A141A9614D20084EFAE /* THGFoundationTests */,
-				CA24103C1AF965B700AA4410 /* THGFoundation_osx */,
+				CA8CD5591B7A9DCA00DA8BF7 /* THGFoundation_osx */,
+				CA8CD5621B7A9DCB00DA8BF7 /* THGFoundation_osxTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CA2410481AF965B700AA4410 /* Resources */ = {
+		CA8CD5581B7A9DCA00DA8BF7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA2410491AF965B700AA4410 /* LICENSE in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA8CD5611B7A9DCB00DA8BF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,17 +418,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CA24103D1AF965B700AA4410 /* Sources */ = {
+		CA8CD5551B7A9DCA00DA8BF7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA24103E1AF965B700AA4410 /* NSBundle.swift in Sources */,
-				CA24103F1AF965B700AA4410 /* Exceptions.swift in Sources */,
-				CA2410401AF965B700AA4410 /* Array.swift in Sources */,
-				CA2410411AF965B700AA4410 /* NSThread.swift in Sources */,
-				CA2410421AF965B700AA4410 /* String.swift in Sources */,
-				CA2410431AF965B700AA4410 /* Synchronization.swift in Sources */,
-				CA2410441AF965B700AA4410 /* NSError.swift in Sources */,
+				CA8CD5831B7A9F5600DA8BF7 /* ObjectAssociation.swift in Sources */,
+				CA8CD5801B7A9F4C00DA8BF7 /* String.swift in Sources */,
+				CA8CD5841B7A9F5800DA8BF7 /* Synchronization.swift in Sources */,
+				CA8CD57F1B7A9F4A00DA8BF7 /* NSThread.swift in Sources */,
+				CA8CD57E1B7A9F4700DA8BF7 /* Array.swift in Sources */,
+				CA8CD5851B7A9F5C00DA8BF7 /* Exceptions.swift in Sources */,
+				CA8CD5911B7D43C700DA8BF7 /* TestHelper.swift in Sources */,
+				CA8CD5821B7A9F5200DA8BF7 /* NSBundle.swift in Sources */,
+				CA8CD5811B7A9F4F00DA8BF7 /* NSError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA8CD55F1B7A9DCB00DA8BF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA8CD5731B7A9DE900DA8BF7 /* NSBundleTests.swift in Sources */,
+				CA8CD5721B7A9DE600DA8BF7 /* ArrayTests.swift in Sources */,
+				CA8CD5711B7A9DE300DA8BF7 /* THGFoundationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +454,9 @@
 				CA9B9EB91AB7660A007E2B04 /* NSThread.swift in Sources */,
 				CA9B9EB51AB764DB007E2B04 /* String.swift in Sources */,
 				CA8804431A969F7500C00CAE /* Synchronization.swift in Sources */,
+				CA8CD53B1B7A992C00DA8BF7 /* ObjectAssociation.swift in Sources */,
 				CABA99941AC32EBE008D25B4 /* NSError.swift in Sources */,
+				CA8CD5901B7D42DB00DA8BF7 /* TestHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +473,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CA8CD5661B7A9DCB00DA8BF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA8CD5591B7A9DCA00DA8BF7 /* THGFoundation_osx */;
+			targetProxy = CA8CD5651B7A9DCB00DA8BF7 /* PBXContainerItemProxy */;
+		};
 		CACF2A181A9614D20084EFAE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CACF2A091A9614D20084EFAE /* THGFoundation */;
@@ -386,39 +486,73 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		CA24104B1AF965B700AA4410 /* Debug */ = {
+		CA8CD56C1B7A9DCB00DA8BF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "THGFoundation copy-Info.plist";
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = THGFoundation_osx/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.theholygrail.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_MODULE_NAME = THGFoundation;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = io.theholygrail.THGFoundation;
 				PRODUCT_NAME = THGFoundation;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		CA24104C1AF965B700AA4410 /* Release */ = {
+		CA8CD56D1B7A9DCB00DA8BF7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "THGFoundation copy-Info.plist";
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = THGFoundation_osx/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.theholygrail.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_MODULE_NAME = THGFoundation;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = io.theholygrail.THGFoundation;
 				PRODUCT_NAME = THGFoundation;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CA8CD56F1B7A9DCB00DA8BF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = THGFoundation_osxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.theholygrail.THGFoundation-osxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CA8CD5701B7A9DCB00DA8BF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = THGFoundation_osxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.theholygrail.THGFoundation-osxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -573,11 +707,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CA24104A1AF965B700AA4410 /* Build configuration list for PBXNativeTarget "THGFoundation_osx" */ = {
+		CA8CD56B1B7A9DCB00DA8BF7 /* Build configuration list for PBXNativeTarget "THGFoundation_osx" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CA24104B1AF965B700AA4410 /* Debug */,
-				CA24104C1AF965B700AA4410 /* Release */,
+				CA8CD56C1B7A9DCB00DA8BF7 /* Debug */,
+				CA8CD56D1B7A9DCB00DA8BF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA8CD56E1B7A9DCB00DA8BF7 /* Build configuration list for PBXNativeTarget "THGFoundation_osxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA8CD56F1B7A9DCB00DA8BF7 /* Debug */,
+				CA8CD5701B7A9DCB00DA8BF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
