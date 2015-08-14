@@ -9,7 +9,7 @@
 import Foundation
 
 /**
-The name of the exception thrown by 'exceptionFailture(..)'.
+The name of the exception thrown by 'exceptionFailture(...)'.
 */
 public let THGExceptionFailure = "THGExceptionFailure"
 
@@ -20,10 +20,9 @@ paths.  To handle unrecoverable errors, see 'assertionFailure'.
 Raises an exception and can be used on testable code.  This is to be used as an 
 alternative to assertionFailure(), which blows up tests.
 
-- parameter format: Format string to be used.
-- parameter arguments: Argument list to be used in the format string.
+- parameter message: Message string to be used.
 
-Example:  exceptionFailure("This object is invalid.  %@", obj)
+Example:  exceptionFailure("This object is invalid.  \(obj)")
 */
 public func exceptionFailure(message: String) {
     if isInUnitTest() {
