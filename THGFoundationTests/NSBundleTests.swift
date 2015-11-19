@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import THGFoundation
 
 class NSBundleTests: XCTestCase {
     

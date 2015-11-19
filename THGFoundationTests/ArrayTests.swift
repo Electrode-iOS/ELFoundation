@@ -6,9 +6,8 @@
 //  Copyright (c) 2015 TheHolyGrail. All rights reserved.
 //
 
-import UIKit
-import THGFoundation
 import XCTest
+import THGFoundation
 
 func ==(lhs: Item, rhs: Item) -> Bool {
     return lhs.value == rhs.value

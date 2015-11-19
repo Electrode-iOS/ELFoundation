@@ -23,7 +23,7 @@ public extension NSBundle {
         if let id = bundleIdentifier {
             let components: [String] = id.componentsSeparatedByString(".")
             let reverseComponents = Array(components.reverse())
-            let result = ".".join(reverseComponents)
+            let result = reverseComponents.joinWithSeparator(".")
             return result
         }
         

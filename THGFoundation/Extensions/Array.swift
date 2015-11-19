@@ -29,3 +29,34 @@ public func arrayByRemoving<T: Equatable>(items items: Array<T>, fromArray: Arra
 
     return result
 }
+
+
+public extension Array {
+    
+    /**
+    Runs the specified block against each element in the array.
+    example:
+        array.each {
+            $0.doSomething()
+        }
+    */
+    func each(block: (object: Element) -> Void) {
+        for object in self {
+            block(object: object)
+        }
+    }
+    
+    /**
+    Runs the specified block against each element in the array by index.
+    example:
+        array.eachWithIndex { (object, index) -> Void in
+            object.doSomethingWithIndex(index)
+        }
+    */
+    func eachWithIndex(block: (object: Element, index: Int) -> Void) {
+        for (index, object) in self.enumerate() {
+            block(object: object, index: index)
+        }
+    }
+    
+}
