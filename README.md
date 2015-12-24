@@ -1,8 +1,6 @@
-# Excalibur
+# Excalibur [![Build Status](https://travis-ci.org/TheHolyGrail/Excalibur.svg?branch=master)](https://travis-ci.org/TheHolyGrail/Excalibur)
 
 Foundational bits, extensions, etc.  This project contains mostly generic functionality.
-
-___
 
 ## A quick word about dependencies
 
