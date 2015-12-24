@@ -31,6 +31,8 @@ public func arrayByRemoving<T: Equatable>(items items: Array<T>, fromArray: Arra
 }
 
 
+// MARK: Iteration helpers
+
 public extension Array {
     
     /**
@@ -59,4 +61,57 @@ public extension Array {
         }
     }
     
+}
+
+// MARK: Stack and Queue helpers
+
+extension Array {
+    
+    //Stack - LIFO
+    mutating func push(newElement: Element) {
+        self.append(newElement)
+    }
+    
+    mutating func pop() -> Element? {
+        if self.count > 0 {
+            return self.removeLast()
+        }
+        return nil
+    }
+    
+    func peekAtStack() -> Element? {
+        if self.count > 0 {
+            return self.last
+        }
+        return nil
+    }
+    
+    //Queue - FIFO
+    mutating func enqueue(newElement: Element) {
+        self.append(newElement)
+    }
+    
+    mutating func dequeue() -> Element? {
+        if self.count > 0 {
+            return self.removeAtIndex(0)
+        }
+        return nil
+    }
+    
+    func peekAtQueue() -> Element? {
+        if self.count > 0 {
+            return self.first
+        }
+        return nil
+    }
+}
+
+// MARK: Object removal helpers.
+
+extension Array where Element : Equatable {
+    mutating func removeObject(object : Generator.Element) {
+        if let index = self.indexOf(object) {
+            self.removeAtIndex(index)
+        }
+    }
 }

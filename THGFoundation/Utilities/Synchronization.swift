@@ -53,14 +53,29 @@ final public class Spinlock {
     }
     
     /**
+    Tries to acquire the lock, and if successful executes the specified closure.
+
+    - parameter closure: Closure to execute inside of the lock.
+    - returns: False if it failed to acquire the lock, otherwise true.
+    */
+    public func tryaround(closure: () -> Void) -> Bool {
+        let held = OSSpinLockTry(&spinlock)
+        if !held {
+            closure()
+            OSSpinLockUnlock(&spinlock)
+        }
+        return held
+    }
+    
+    /**
     Runs the specified closure within the spin lock.
     
     - parameter closure: Closure to execute inside of the lock.
     */
     public func around(closure: () -> Void) {
-        OSSpinLockLock(&lock)
+        OSSpinLockLock(&spinlock)
         closure()
-        OSSpinLockUnlock(&lock)
+        OSSpinLockUnlock(&spinlock)
     }
     
     /**
@@ -70,11 +85,23 @@ final public class Spinlock {
     - returns: The result of the closure.
     */
     public func around<T>(closure: () -> T) -> T {
-        OSSpinLockLock(&lock)
+        OSSpinLockLock(&spinlock)
         let result: T = closure()
-        OSSpinLockUnlock(&lock)
+        OSSpinLockUnlock(&spinlock)
         return result
     }
     
-    private var lock: OSSpinLock = OS_SPINLOCK_INIT
+    public func lock() {
+        OSSpinLockLock(&spinlock)
+    }
+    
+    public func trylock() -> Bool {
+        return OSSpinLockTry(&spinlock)
+    }
+    
+    public func unlock() {
+        OSSpinLockUnlock(&spinlock)
+    }
+    
+    private var spinlock: OSSpinLock = OS_SPINLOCK_INIT
 }
