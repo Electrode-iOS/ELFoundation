@@ -25,7 +25,7 @@ class NSBundleTests: XCTestCase {
         let bundle = NSBundle(identifier: "com.walmartlabs.ELFoundation")
         let reverseIdentifier = bundle?.reverseBundleIdentifier()
         
-        XCTAssertTrue(reverseIdentifier == "ELFoundation.theholygrail.io")
+        XCTAssertTrue(reverseIdentifier == "ELFoundation.walmartlabs.com")
     }
     
 }
