@@ -3,7 +3,7 @@
 //  ELFoundation
 //
 //  Created by Brandon Sneed on 12/9/15.
-//  Copyright © 2015 TheHolyGrail. All rights reserved.
+//  Copyright © 2015 WalmartLabs. All rights reserved.
 //
 
 import Foundation

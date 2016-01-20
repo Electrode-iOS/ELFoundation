@@ -3,7 +3,7 @@
 //  ELFoundation
 //
 //  Created by Brandon Sneed on 3/25/15.
-//  Copyright (c) 2015 TheHolyGrail. All rights reserved.
+//  Copyright (c) 2015 WalmartLabs. All rights reserved.
 //
 
 import Foundation
@@ -18,7 +18,7 @@ Example:
         case LostACoconut
 
         public var domain: String {
-            return "io.theholygrail.THGMyError"
+            return "com.walmartlabs.THGMyError"
         }
 
         public var errorDescription: String {
@@ -32,7 +32,7 @@ Example:
 public protocol NSErrorEnum {
     /// Returns the raw value of the enum.  The enum MUST be an Int.
     var rawValue: Int { get }
-    /// Returns the domain of the error enum.  ie: "io.theholygrail.THGMyError"
+    /// Returns the domain of the error enum.  ie: "com.walmartlabs.THGMyError"
     var domain: String { get }
     /// Returns an error description string representing the enum's value.
     var errorDescription: String { get }

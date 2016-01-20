@@ -1,4 +1,4 @@
-# Excalibur [![Build Status](https://travis-ci.org/TheHolyGrail/Excalibur.svg?branch=master)](https://travis-ci.org/TheHolyGrail/Excalibur)
+# Excalibur [![Build Status](https://travis-ci.org/WalmartLabs/Excalibur.svg?branch=master)](https://travis-ci.org/WalmartLabs/Excalibur)
 
 Foundational bits, extensions, etc.  This project contains mostly generic functionality.
 
@@ -54,7 +54,7 @@ More to come...
 
 We appreciate your contributions to all of our projects and look forward to interacting with you via Pull Requests, the issue tracker, via Twitter, etc.  We're happy to help you, and to have you help us.  We'll strive to answer every PR and issue and be very transparent in what we do.
 
-When contributing code, please refer to our Dennis (https://github.com/TheHolyGrail/Dennis).
+When contributing code, please refer to our Dennis (https://github.com/WalmartLabs/Dennis).
 
 ###### THG's Primary Contributors
 
@@ -69,7 +69,7 @@ Wes Ostler (@wesostler)<br>
 
 The MIT License (MIT)
 
-Copyright (c) 2015 Walmart, TheHolyGrail, and other Contributors
+Copyright (c) 2015 Walmart, WalmartLabs, and other Contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -3,7 +3,7 @@
 //  ELFoundation_osx
 //
 //  Created by Brandon Sneed on 8/11/15.
-//  Copyright © 2015 TheHolyGrail. All rights reserved.
+//  Copyright © 2015 WalmartLabs. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>

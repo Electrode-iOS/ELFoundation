@@ -355,7 +355,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
-				ORGANIZATIONNAME = TheHolyGrail;
+				ORGANIZATIONNAME = WalmartLabs;
 				TargetAttributes = {
 					CA8CD5591B7A9DCA00DA8BF7 = {
 						CreatedOnToolsVersion = 7.0;
@@ -510,7 +510,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = io.theholygrail.ELFoundation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.walmartlabs.ELFoundation;
 				PRODUCT_NAME = ELFoundation;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -531,7 +531,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = io.theholygrail.ELFoundation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.walmartlabs.ELFoundation;
 				PRODUCT_NAME = ELFoundation;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -546,7 +546,7 @@
 				INFOPLIST_FILE = ELFoundation_osxTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.theholygrail.ELFoundation-osxTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.walmartlabs.ELFoundation-osxTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -560,7 +560,7 @@
 				INFOPLIST_FILE = ELFoundation_osxTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.theholygrail.ELFoundation-osxTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.walmartlabs.ELFoundation-osxTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -665,7 +665,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.theholygrail.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.walmartlabs.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -682,7 +682,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.theholygrail.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.walmartlabs.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};

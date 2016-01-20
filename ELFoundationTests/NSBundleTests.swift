@@ -3,7 +3,7 @@
 //  ELFoundation
 //
 //  Created by Steven Riggins on 7/7/15.
-//  Copyright © 2015 TheHolyGrail. All rights reserved.
+//  Copyright © 2015 WalmartLabs. All rights reserved.
 //
 
 import XCTest
@@ -22,7 +22,7 @@ class NSBundleTests: XCTestCase {
     }
     
     func testReverseBundleIdentifier() {
-        let bundle = NSBundle(identifier: "io.theholygrail.ELFoundation")
+        let bundle = NSBundle(identifier: "com.walmartlabs.ELFoundation")
         let reverseIdentifier = bundle?.reverseBundleIdentifier()
         
         XCTAssertTrue(reverseIdentifier == "ELFoundation.theholygrail.io")
