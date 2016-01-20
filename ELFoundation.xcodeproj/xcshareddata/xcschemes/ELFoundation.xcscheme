@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CACF2A091A9614D20084EFAE"
-               BuildableName = "THGFoundation.framework"
-               BlueprintName = "THGFoundation"
-               ReferencedContainer = "container:THGFoundation.xcodeproj">
+               BuildableName = "ELFoundation.framework"
+               BlueprintName = "ELFoundation"
+               ReferencedContainer = "container:ELFoundation.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CACF2A141A9614D20084EFAE"
-               BuildableName = "THGFoundationTests.xctest"
-               BlueprintName = "THGFoundationTests"
-               ReferencedContainer = "container:THGFoundation.xcodeproj">
+               BuildableName = "ELFoundationTests.xctest"
+               BlueprintName = "ELFoundationTests"
+               ReferencedContainer = "container:ELFoundation.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CACF2A141A9614D20084EFAE"
-               BuildableName = "THGFoundationTests.xctest"
-               BlueprintName = "THGFoundationTests"
-               ReferencedContainer = "container:THGFoundation.xcodeproj">
+               BuildableName = "ELFoundationTests.xctest"
+               BlueprintName = "ELFoundationTests"
+               ReferencedContainer = "container:ELFoundation.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CACF2A091A9614D20084EFAE"
-            BuildableName = "THGFoundation.framework"
-            BlueprintName = "THGFoundation"
-            ReferencedContainer = "container:THGFoundation.xcodeproj">
+            BuildableName = "ELFoundation.framework"
+            BlueprintName = "ELFoundation"
+            ReferencedContainer = "container:ELFoundation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -79,9 +79,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CACF2A091A9614D20084EFAE"
-            BuildableName = "THGFoundation.framework"
-            BlueprintName = "THGFoundation"
-            ReferencedContainer = "container:THGFoundation.xcodeproj">
+            BuildableName = "ELFoundation.framework"
+            BlueprintName = "ELFoundation"
+            ReferencedContainer = "container:ELFoundation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -97,9 +97,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CACF2A091A9614D20084EFAE"
-            BuildableName = "THGFoundation.framework"
-            BlueprintName = "THGFoundation"
-            ReferencedContainer = "container:THGFoundation.xcodeproj">
+            BuildableName = "ELFoundation.framework"
+            BlueprintName = "ELFoundation"
+            ReferencedContainer = "container:ELFoundation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

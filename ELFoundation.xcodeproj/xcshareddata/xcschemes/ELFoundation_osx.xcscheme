@@ -14,24 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CACF2A091A9614D20084EFAE"
-               BuildableName = "THGFoundation.framework"
-               BlueprintName = "THGFoundation"
-               ReferencedContainer = "container:THGFoundation.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CACF2A141A9614D20084EFAE"
-               BuildableName = "THGFoundationTests.xctest"
-               BlueprintName = "THGFoundationTests"
-               ReferencedContainer = "container:THGFoundation.xcodeproj">
+               BlueprintIdentifier = "CA8CD5591B7A9DCA00DA8BF7"
+               BuildableName = "ELFoundation.framework"
+               BlueprintName = "ELFoundation_osx"
+               ReferencedContainer = "container:ELFoundation.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -42,26 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CACF2A141A9614D20084EFAE"
-               BuildableName = "THGFoundationTests.xctest"
-               BlueprintName = "THGFoundationTests"
-               ReferencedContainer = "container:THGFoundation.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CACF2A091A9614D20084EFAE"
-            BuildableName = "THGFoundation.framework"
-            BlueprintName = "THGFoundation"
-            ReferencedContainer = "container:THGFoundation.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -78,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CACF2A091A9614D20084EFAE"
-            BuildableName = "THGFoundation.framework"
-            BlueprintName = "THGFoundation"
-            ReferencedContainer = "container:THGFoundation.xcodeproj">
+            BlueprintIdentifier = "CA8CD5591B7A9DCA00DA8BF7"
+            BuildableName = "ELFoundation.framework"
+            BlueprintName = "ELFoundation_osx"
+            ReferencedContainer = "container:ELFoundation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -96,10 +63,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CACF2A091A9614D20084EFAE"
-            BuildableName = "THGFoundation.framework"
-            BlueprintName = "THGFoundation"
-            ReferencedContainer = "container:THGFoundation.xcodeproj">
+            BlueprintIdentifier = "CA8CD5591B7A9DCA00DA8BF7"
+            BuildableName = "ELFoundation.framework"
+            BlueprintName = "ELFoundation_osx"
+            ReferencedContainer = "container:ELFoundation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

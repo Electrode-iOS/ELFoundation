@@ -1,6 +1,6 @@
 //
 //  Exceptions.swift
-//  THGFoundation
+//  ELFoundation
 //
 //  Created by Brandon Sneed on 2/19/15.
 //  Copyright (c) 2015 TheHolyGrail. All rights reserved.
@@ -27,7 +27,7 @@ Example:  exceptionFailure("This object is invalid.  \(obj)")
 public func exceptionFailure(message: String) {
     if isInUnitTest() {
         NSException.raise(THGExceptionFailure, format: message, arguments: CVaListPointer(_fromUnsafeMutablePointer: nil))
-        //NSException.raise("THGFoundationExceptionFailure", format: format, arguments: nil)
+        //NSException.raise("ELFoundationExceptionFailure", format: format, arguments: nil)
     } else {
         #if DEBUG
         NSException.raise(THGExceptionFailure, format: message, arguments: CVaListPointer(_fromUnsafeMutablePointer: nil))

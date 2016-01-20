@@ -1,13 +1,13 @@
 //
 //  NSBundleTests.swift
-//  THGFoundation
+//  ELFoundation
 //
 //  Created by Steven Riggins on 7/7/15.
 //  Copyright © 2015 TheHolyGrail. All rights reserved.
 //
 
 import XCTest
-import THGFoundation
+import ELFoundation
 
 class NSBundleTests: XCTestCase {
     
@@ -22,10 +22,10 @@ class NSBundleTests: XCTestCase {
     }
     
     func testReverseBundleIdentifier() {
-        let bundle = NSBundle(identifier: "io.theholygrail.THGFoundation")
+        let bundle = NSBundle(identifier: "io.theholygrail.ELFoundation")
         let reverseIdentifier = bundle?.reverseBundleIdentifier()
         
-        XCTAssertTrue(reverseIdentifier == "THGFoundation.theholygrail.io")
+        XCTAssertTrue(reverseIdentifier == "ELFoundation.theholygrail.io")
     }
     
 }

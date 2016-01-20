@@ -1,6 +1,6 @@
 //
 //  Array.swift
-//  THGFoundation
+//  ELFoundation
 //
 //  Created by Brandon Sneed on 4/4/15.
 //  Copyright (c) 2015 TheHolyGrail. All rights reserved.

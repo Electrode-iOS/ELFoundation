@@ -1,6 +1,6 @@
 //
 //  NSThread.swift
-//  THGFoundation
+//  ELFoundation
 //
 //  Created by Brandon Sneed on 3/16/15.
 //  Copyright (c) 2015 TheHolyGrail. All rights reserved.
@@ -10,7 +10,7 @@ import Foundation
 
 public extension NSThread {
 
-    static private let formatterCacheKey = "THGFoundation.dateFormatter"
+    static private let formatterCacheKey = "ELFoundation.dateFormatter"
 
     class func dateFormatter(format: String, locale: NSLocale? = NSLocale.currentLocale()) -> NSDateFormatter {
         let threadDictionary = NSThread.currentThread().threadDictionary

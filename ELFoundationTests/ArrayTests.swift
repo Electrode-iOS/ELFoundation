@@ -1,13 +1,13 @@
 //
 //  ArrayTests.swift
-//  THGFoundation
+//  ELFoundation
 //
 //  Created by Brandon Sneed on 4/4/15.
 //  Copyright (c) 2015 TheHolyGrail. All rights reserved.
 //
 
 import XCTest
-import THGFoundation
+import ELFoundation
 
 func ==(lhs: Item, rhs: Item) -> Bool {
     return lhs.value == rhs.value

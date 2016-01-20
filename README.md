@@ -18,7 +18,7 @@ Now back to the good stuff....
 
 ## Introduction
 
-THGFoundation/Excalibur is intended to contain very generic functionality.  Helper extensions, lower level constructs, etc.
+ELFoundation/Excalibur is intended to contain very generic functionality.  Helper extensions, lower level constructs, etc.
 
 The following constructs have been implemented:
 

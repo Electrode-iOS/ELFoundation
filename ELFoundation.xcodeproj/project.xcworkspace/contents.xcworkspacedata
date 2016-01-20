@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:THGFoundation.xcodeproj">
+      location = "self:ELFoundation.xcodeproj">
    </FileRef>
 </Workspace>

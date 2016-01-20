@@ -1,6 +1,6 @@
 //
-//  THGFoundationTests.swift
-//  THGFoundationTests
+//  ELFoundationTests.swift
+//  ELFoundationTests
 //
 //  Created by Brandon Sneed on 2/19/15.
 //  Copyright (c) 2015 TheHolyGrail. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class THGFoundationTests: XCTestCase {
+class ELFoundationTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

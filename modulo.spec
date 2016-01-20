@@ -1,6 +1,6 @@
 {
   "modulesPath" : "..\/",
   "initialBranch" : "master",
-  "sourcePath" : "THGFoundation.xcodeproj",
+  "sourcePath" : "ELFoundation.xcodeproj",
   "name" : "Excalibur"
 }
