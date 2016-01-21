@@ -11,7 +11,7 @@ import Foundation
 /**
 The name of the exception thrown by 'exceptionFailture(...)'.
 */
-public let THGExceptionFailure = "THGExceptionFailure"
+public let ELExceptionFailure = "ELExceptionFailure"
 
 /**
 This function is intended to be used to catch programming errors and undefined code
@@ -26,11 +26,11 @@ Example:  exceptionFailure("This object is invalid.  \(obj)")
 */
 public func exceptionFailure(message: String) {
     if isInUnitTest() {
-        NSException.raise(THGExceptionFailure, format: message, arguments: CVaListPointer(_fromUnsafeMutablePointer: nil))
+        NSException.raise(ELExceptionFailure, format: message, arguments: CVaListPointer(_fromUnsafeMutablePointer: nil))
         //NSException.raise("ELFoundationExceptionFailure", format: format, arguments: nil)
     } else {
         #if DEBUG
-        NSException.raise(THGExceptionFailure, format: message, arguments: CVaListPointer(_fromUnsafeMutablePointer: nil))
+        NSException.raise(ELExceptionFailure, format: message, arguments: CVaListPointer(_fromUnsafeMutablePointer: nil))
         #endif
     }
 }
