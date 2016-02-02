@@ -17,7 +17,7 @@ public extension NSBundle {
 
     - returns: The reverse DNS style bundle identifier
     
-    Example: com.theholygrail.thgfoundation
+    Example: com.walmartlabs.thgfoundation
     */
     public func reverseBundleIdentifier() -> String? {
         if let id = bundleIdentifier {

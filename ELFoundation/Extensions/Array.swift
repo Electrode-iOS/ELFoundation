@@ -65,7 +65,7 @@ public extension Array {
 
 // MARK: Stack and Queue helpers
 
-extension Array {
+public extension Array {
     
     //Stack - LIFO
     mutating func push(newElement: Element) {
@@ -108,7 +108,7 @@ extension Array {
 
 // MARK: Object removal helpers.
 
-extension Array where Element : Equatable {
+public extension Array where Element : Equatable {
     mutating func removeObject(object : Generator.Element) {
         if let index = self.indexOf(object) {
             self.removeAtIndex(index)

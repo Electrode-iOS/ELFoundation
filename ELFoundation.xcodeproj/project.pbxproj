@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		17316C141B174A940019A75C /* ELFoundation.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CACF2A0A1A9614D20084EFAE /* ELFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		200045851B4CA4FE005C861B /* NSBundleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200045841B4CA4FE005C861B /* NSBundleTests.swift */; };
+		224524F01C602E830004E821 /* NSObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224524EF1C602E830004E821 /* NSObjectTests.swift */; };
+		224524F21C60336D0004E821 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224524F11C60336D0004E821 /* StringTests.swift */; };
+		224524F31C60400F0004E821 /* NSObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224524EF1C602E830004E821 /* NSObjectTests.swift */; };
+		224524F41C6040120004E821 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224524F11C60336D0004E821 /* StringTests.swift */; };
 		CA072A691C18BDE80059CA99 /* Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA072A681C18BDE80059CA99 /* Swizzling.swift */; };
 		CA072A6A1C18BDE80059CA99 /* Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA072A681C18BDE80059CA99 /* Swizzling.swift */; };
 		CA39B1BE1C17661800D1A950 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39B1BD1C17661800D1A950 /* NSObject.swift */; };
@@ -75,6 +79,8 @@
 
 /* Begin PBXFileReference section */
 		200045841B4CA4FE005C861B /* NSBundleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBundleTests.swift; sourceTree = "<group>"; };
+		224524EF1C602E830004E821 /* NSObjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectTests.swift; sourceTree = "<group>"; };
+		224524F11C60336D0004E821 /* StringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
 		CA072A681C18BDE80059CA99 /* Swizzling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swizzling.swift; sourceTree = "<group>"; };
 		CA39B1BD1C17661800D1A950 /* NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
 		CA5C71861AD028D40030B2AC /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
@@ -237,8 +243,10 @@
 			isa = PBXGroup;
 			children = (
 				CACF2A1C1A9614D20084EFAE /* ELFoundationTests.swift */,
-				CA5C71881AD031CE0030B2AC /* ArrayTests.swift */,
 				200045841B4CA4FE005C861B /* NSBundleTests.swift */,
+				224524EF1C602E830004E821 /* NSObjectTests.swift */,
+				224524F11C60336D0004E821 /* StringTests.swift */,
+				CA5C71881AD031CE0030B2AC /* ArrayTests.swift */,
 				CACF2A1A1A9614D20084EFAE /* Supporting Files */,
 			);
 			path = ELFoundationTests;
@@ -447,6 +455,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA8CD5731B7A9DE900DA8BF7 /* NSBundleTests.swift in Sources */,
+				224524F41C6040120004E821 /* StringTests.swift in Sources */,
+				224524F31C60400F0004E821 /* NSObjectTests.swift in Sources */,
 				CA8CD5721B7A9DE600DA8BF7 /* ArrayTests.swift in Sources */,
 				CA8CD5711B7A9DE300DA8BF7 /* ELFoundationTests.swift in Sources */,
 			);
@@ -475,6 +485,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CACF2A1D1A9614D20084EFAE /* ELFoundationTests.swift in Sources */,
+				224524F21C60336D0004E821 /* StringTests.swift in Sources */,
+				224524F01C602E830004E821 /* NSObjectTests.swift in Sources */,
 				200045851B4CA4FE005C861B /* NSBundleTests.swift in Sources */,
 				CA5C71891AD031CE0030B2AC /* ArrayTests.swift in Sources */,
 			);
@@ -698,7 +710,7 @@
 				);
 				INFOPLIST_FILE = ELFoundationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.theholygrail.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.walmartlabs.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -709,7 +721,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ELFoundationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.theholygrail.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.walmartlabs.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
