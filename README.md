@@ -12,10 +12,19 @@ Install by adding `ELFoundation.xcodeproj` to your project and configuring your 
 
 ## Usage
 
+Numerous methods all over the source. Please see the code for up to date documentation. Following is a brief overview:
+
 * `exceptionFailure` - A replacement for assertionFailure, usable in tests.
 * `synchronized<T>` - Akin to @synchronized() in Objective-C.
 * `Spinlock` - A basic spinlock implementation for synchronization.
-* `NSBundle (extensions)` - Handy extensions when working with bundles.
+* `Object Association` - Objective-C style object association.
+* `Swizzling` - Objective-C style swizzling.
+* `String (extensions)` - Handy extensions.
+* `Array (extensions)` - Handy extensions.
+* `NSObject (extensions)` - Handy extensions.
+* `NSThread (extensions)` - Handy extensions.
+* `NSError (extensions)` - Handy extensions.
+* `NSBundle (extensions)` - Handy extensions.
 * `XCTestCase (extensions)` - Gets XCTAssertThrows working in Swift.
 
 ## Some Examples
