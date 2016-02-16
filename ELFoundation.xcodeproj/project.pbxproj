@@ -80,6 +80,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1D4C871D1C73C4ED0021C26D /* ELFoundation.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ELFoundation.podspec; sourceTree = "<group>"; };
 		200045841B4CA4FE005C861B /* NSBundleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBundleTests.swift; sourceTree = "<group>"; };
 		224524EF1C602E830004E821 /* NSObjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectTests.swift; sourceTree = "<group>"; };
 		224524F11C60336D0004E821 /* StringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
@@ -203,6 +204,7 @@
 			children = (
 				CACF2A2C1A961C120084EFAE /* LICENSE */,
 				CACF2A2D1A961C120084EFAE /* README.md */,
+				1D4C871D1C73C4ED0021C26D /* ELFoundation.podspec */,
 				CACF2A0C1A9614D20084EFAE /* ELFoundation */,
 				CACF2A191A9614D20084EFAE /* ELFoundationTests */,
 				CA8CD55B1B7A9DCA00DA8BF7 /* ELFoundation_osx */,
