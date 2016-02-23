@@ -49,12 +49,35 @@ class ArrayTests: XCTestCase {
         XCTAssertTrue(result[1] == item3, "[0] should be item2!")
         XCTAssertTrue(result[2] == item6, "[0] should be item2!")
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testStack() {
+        var someInts = [Int]()
+        someInts.push(1)
+        XCTAssertTrue(someInts == [1])
+        someInts.push(2)
+        XCTAssertTrue(someInts == [1, 2])
+        XCTAssertTrue(someInts.peekAtStack() == 2)
+        XCTAssertTrue(someInts.pop() == 2)
+        XCTAssertTrue(someInts == [1])
+        someInts.pop()
+        XCTAssertNil(someInts.pop())
     }
-
+    
+    func testQueue() {
+        var someInts = [Int]()
+        someInts.enqueue(1)
+        XCTAssertTrue(someInts == [1])
+        someInts.enqueue(2)
+        XCTAssertTrue(someInts == [1, 2])
+        XCTAssertTrue(someInts.peekAtQueue() == 1)
+        XCTAssertTrue(someInts.dequeue() == 1)
+        someInts.dequeue()
+        XCTAssertNil(someInts.dequeue())
+    }
+    
+    func testRemoveObject() {
+        var someInts = [3, 1, 4, 2, 5]
+        someInts.removeObject(1)
+        XCTAssertTrue(someInts == [3, 4, 2, 5])
+    }
 }

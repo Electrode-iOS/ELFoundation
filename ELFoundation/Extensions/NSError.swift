@@ -13,12 +13,12 @@ Protocol to make using NSError's in swift easier to use.
 
 Example:
 
-    enum THGMyError: Int, NSErrorEnum {
+    enum ELMyError: Int, NSErrorEnum {
         case FileNotFound
         case LostACoconut
 
         public var domain: String {
-            return "com.walmartlabs.THGMyError"
+            return "com.walmartlabs.ELMyError"
         }
 
         public var errorDescription: String {
@@ -32,7 +32,7 @@ Example:
 public protocol NSErrorEnum {
     /// Returns the raw value of the enum.  The enum MUST be an Int.
     var rawValue: Int { get }
-    /// Returns the domain of the error enum.  ie: "com.walmartlabs.THGMyError"
+    /// Returns the domain of the error enum.  ie: "com.walmartlabs.ELMyError"
     var domain: String { get }
     /// Returns an error description string representing the enum's value.
     var errorDescription: String { get }
@@ -44,7 +44,7 @@ extension NSError {
     
     Example:
     
-        let error = NSError(THGMyError.LostACoconut)
+        let error = NSError(ELMyError.LostACoconut)
     */
     convenience public init(_ code: NSErrorEnum) {
         self.init(domain:code.domain, code: code.rawValue, userInfo: [NSLocalizedDescriptionKey: code.errorDescription])

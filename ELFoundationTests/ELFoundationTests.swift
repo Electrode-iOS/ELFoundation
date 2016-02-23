@@ -7,6 +7,23 @@
 //
 
 import XCTest
+import ELFoundation
+
+class Foo: NSObject {
+    dynamic func returnsOne() -> Int {
+        return 1
+    }
+}
+
+extension Foo {
+    dynamic func returnsTwo() -> Int {
+        return 2
+    }
+}
+
+class Bar {
+    
+}
 
 class ELFoundationTests: XCTestCase {
     
@@ -20,17 +37,19 @@ class ELFoundationTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+    func testSwizzling() {
+        let foo = Foo()
+        XCTAssertTrue(foo.returnsOne() == 1)
+        unsafeSwizzle(Foo.self, original: Selector("returnsOne"), replacement: Selector("returnsTwo"))
+        XCTAssertTrue(foo.returnsOne() == 2)
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
+    func testObjectAssociation() {
+        let bar = Bar()
+        let storedValue = "O'HAI"
+        setAssociatedObject(bar, value: storedValue, associativeKey: "AnAssociationkey", policy: objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
+        let retrievedValue = getAssociatedObject(bar, associativeKey: "AnAssociationkey") as String!
+        XCTAssertTrue(retrievedValue == storedValue)
     }
-
     
 }

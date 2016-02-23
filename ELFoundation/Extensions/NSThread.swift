@@ -10,9 +10,19 @@ import Foundation
 
 public extension NSThread {
 
-    static private let formatterCacheKey = "ELFoundation.dateFormatter"
+    private static let formatterCacheKey = "ELFoundation.dateFormatter"
 
-    class func dateFormatter(format: String, locale: NSLocale? = NSLocale.currentLocale()) -> NSDateFormatter {
+    /**
+     Creates and returns a date formatter for the format and locale. The first time a format is passed in
+     the date formatter is created and cached per thread. This ensures that the costly creation of a date formatter is
+     only done once. Formatters are also created per thread as their underlying implementation hasn't been thread-safe
+     until recent versions of iOS. This last requirement may be removed in a future version of this method.
+     
+     - parameter format: The date format for the creating the date formatter.
+     - parameter locale: The locale for the date formatter.
+     - returns: The date formatter.
+     */
+    public class func dateFormatter(format: String, locale: NSLocale? = NSLocale.currentLocale()) -> NSDateFormatter {
         let threadDictionary = NSThread.currentThread().threadDictionary
 
         var cache: Dictionary<String, NSDateFormatter>? = threadDictionary.objectForKey(formatterCacheKey) as? Dictionary<String, NSDateFormatter>
