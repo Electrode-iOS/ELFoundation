@@ -80,4 +80,10 @@ class ArrayTests: XCTestCase {
         someInts.removeObject(1)
         XCTAssertTrue(someInts == [3, 4, 2, 5])
     }
+    
+    func testRemoveElement() {
+        var someInts = [3, 1, 4, 2, 5]
+        someInts.removeElement(1)
+        XCTAssertTrue(someInts == [3, 4, 2, 5])
+    }
 }

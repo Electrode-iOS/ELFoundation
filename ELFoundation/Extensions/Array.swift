@@ -109,8 +109,22 @@ public extension Array {
 // MARK: Object removal helpers.
 
 public extension Array where Element : Equatable {
+    /**
+     Removes `element` from this array.
+     
+     **This method is deprecated. Please use `removeElement(element: Element)` instead.**
+     */
+    @available(*, deprecated=0.0.3, renamed="removeElement")
     mutating func removeObject(object : Generator.Element) {
-        if let index = self.indexOf(object) {
+        self.removeElement(object)
+    }
+
+    /**
+     Removes `element` from this array.
+     */
+    @available(*, introduced=0.0.3)
+    mutating func removeElement(element: Element) {
+        if let index = self.indexOf(element) {
             self.removeAtIndex(index)
         }
     }
