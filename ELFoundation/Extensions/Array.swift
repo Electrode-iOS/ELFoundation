@@ -103,7 +103,7 @@ public extension Array {
 
 public extension Array where Element : Equatable {
     /**
-     Removes `element` from this array.
+     Removes *the first* occurrence of `element` from this array.
      
      **This method is deprecated. Please use `removeElement(element: Element)` instead.**
      */
@@ -113,7 +113,7 @@ public extension Array where Element : Equatable {
     }
 
     /**
-     Removes `element` from this array.
+     Removes *the first* occurrence of `element` from this array.
      */
     @available(*, introduced=0.0.3)
     mutating func removeElement(element: Element) {
@@ -123,7 +123,7 @@ public extension Array where Element : Equatable {
     }
 
     /**
-     Removes the `elements` from this array.
+     Removes *the first* occurrence of each of the `elements` from this array.
 
      - Parameter elements: Sequence containing elements to remove.
      */

@@ -87,6 +87,15 @@ class ArrayTests: XCTestCase {
         XCTAssertTrue(someInts == [3, 4, 2, 5])
     }
 
+    func testRemoveElementWithDuplicates() {
+        var someInts = [1, 1, 2, 1]
+        //              ^ This one gets removed...
+
+        someInts.removeElement(1)
+
+        XCTAssertEqual(someInts, [1, 2, 1])
+    }
+
     func testRemoveElements() {
         let item1 = Item(value: "1")
         let item2 = Item(value: "2")
@@ -106,5 +115,21 @@ class ArrayTests: XCTestCase {
         XCTAssertTrue(array[0] == item2, "[0] should be item2!")
         XCTAssertTrue(array[1] == item3, "[1] should be item3!")
         XCTAssertTrue(array[2] == item6, "[2] should be item6!")
+    }
+
+    func testRemoveElementsWithDuplicates() {
+        let item1 = Item(value: "1")
+        let item2 = Item(value: "2")
+
+        let itemsToRemove = [item1]
+        var array = [item1, item1, item2, item1]
+        //           ^^^^^ This one gets removed...
+
+        array.removeElements(itemsToRemove)
+
+        XCTAssertTrue(array.count == 3, "array should have 3 items in it!")
+        XCTAssertTrue(array[0] == item1, "[0] should be item1!")
+        XCTAssertTrue(array[1] == item2, "[1] should be item2!")
+        XCTAssertTrue(array[2] == item1, "[2] should be item1!")
     }
 }
