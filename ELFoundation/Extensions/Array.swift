@@ -8,8 +8,6 @@
 
 import Foundation
 
-// Swift does not support public extensions of array, so we'll make some functions for now.
-
 /**
 Creates a new array by removing `items` from `fromArray`
 
@@ -17,15 +15,10 @@ Creates a new array by removing `items` from `fromArray`
 - parameter fromArray: Array to remove items from.
 - returns: A new array with the specified items removed.
 */
+@available(*, deprecated=0.0.3, message="Use array.removeElements(items) instead")
 public func arrayByRemoving<T: Equatable>(items items: Array<T>, fromArray: Array<T>) -> Array<T> {
     var result = fromArray
-
-    for index in 0..<items.count {
-        let item = items[index]
-        if let found = result.indexOf(item) {
-            result.removeAtIndex(found)
-        }
-    }
+    result.removeElements(items)
 
     return result
 }
@@ -126,6 +119,18 @@ public extension Array where Element : Equatable {
     mutating func removeElement(element: Element) {
         if let index = self.indexOf(element) {
             self.removeAtIndex(index)
+        }
+    }
+
+    /**
+     Removes the `elements` from this array.
+
+     - Parameter elements: Sequence containing elements to remove.
+     */
+    @available(*, introduced=0.0.3)
+    mutating func removeElements<S: SequenceType where S.Generator.Element == Element>(elements: S) {
+        for element in elements {
+            self.removeElement(element)
         }
     }
 }
