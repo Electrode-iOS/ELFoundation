@@ -80,4 +80,56 @@ class ArrayTests: XCTestCase {
         someInts.removeObject(1)
         XCTAssertTrue(someInts == [3, 4, 2, 5])
     }
+    
+    func testRemoveElement() {
+        var someInts = [3, 1, 4, 2, 5]
+        someInts.removeElement(1)
+        XCTAssertTrue(someInts == [3, 4, 2, 5])
+    }
+
+    func testRemoveElementWithDuplicates() {
+        var someInts = [1, 1, 2, 1]
+        //              ^ This one gets removed...
+
+        someInts.removeElement(1)
+
+        XCTAssertEqual(someInts, [1, 2, 1])
+    }
+
+    func testRemoveElements() {
+        let item1 = Item(value: "1")
+        let item2 = Item(value: "2")
+        let item3 = Item(value: "3")
+        let item4 = Item(value: "4")
+        let item5 = Item(value: "5")
+        let item6 = Item(value: "6")
+
+        let itemsToRemove = [item1, item4, item5]
+        var array = [item1, item2, item3, item4, item6]
+
+        // result should have item2, item3, and item6 in it.
+        // it should skip over item5 entirely since it's not in 'array'.
+        array.removeElements(itemsToRemove)
+
+        XCTAssertTrue(array.count == 3, "array should have 3 items in it!")
+        XCTAssertTrue(array[0] == item2, "[0] should be item2!")
+        XCTAssertTrue(array[1] == item3, "[1] should be item3!")
+        XCTAssertTrue(array[2] == item6, "[2] should be item6!")
+    }
+
+    func testRemoveElementsWithDuplicates() {
+        let item1 = Item(value: "1")
+        let item2 = Item(value: "2")
+
+        let itemsToRemove = [item1]
+        var array = [item1, item1, item2, item1]
+        //           ^^^^^ This one gets removed...
+
+        array.removeElements(itemsToRemove)
+
+        XCTAssertTrue(array.count == 3, "array should have 3 items in it!")
+        XCTAssertTrue(array[0] == item1, "[0] should be item1!")
+        XCTAssertTrue(array[1] == item2, "[1] should be item2!")
+        XCTAssertTrue(array[2] == item1, "[2] should be item1!")
+    }
 }
