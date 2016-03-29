@@ -21,6 +21,8 @@
 		CA39B1BF1C17661800D1A950 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39B1BD1C17661800D1A950 /* NSObject.swift */; };
 		CA5C71871AD028D40030B2AC /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5C71861AD028D40030B2AC /* Array.swift */; };
 		CA5C71891AD031CE0030B2AC /* ArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5C71881AD031CE0030B2AC /* ArrayTests.swift */; };
+		CA69BE2A1CAAEBF900204B18 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA69BE291CAAEBF900204B18 /* UIView.swift */; };
+		CA69BE2B1CAAEBF900204B18 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA69BE291CAAEBF900204B18 /* UIView.swift */; };
 		CA8804281A962E7000C00CAE /* NSBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8804271A962E7000C00CAE /* NSBundle.swift */; };
 		CA8804401A96327B00C00CAE /* Exceptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88043F1A96327B00C00CAE /* Exceptions.swift */; };
 		CA8804431A969F7500C00CAE /* Synchronization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8804421A969F7500C00CAE /* Synchronization.swift */; };
@@ -88,6 +90,7 @@
 		CA39B1BD1C17661800D1A950 /* NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
 		CA5C71861AD028D40030B2AC /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		CA5C71881AD031CE0030B2AC /* ArrayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
+		CA69BE291CAAEBF900204B18 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		CA8804271A962E7000C00CAE /* NSBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBundle.swift; sourceTree = "<group>"; };
 		CA8804321A962FCD00C00CAE /* XCTestCase+Exceptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XCTestCase+Exceptions.h"; sourceTree = "<group>"; };
 		CA8804331A962FCD00C00CAE /* XCTestCase+Exceptions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "XCTestCase+Exceptions.m"; sourceTree = "<group>"; };
@@ -156,6 +159,7 @@
 				CA9B9EB41AB764DB007E2B04 /* String.swift */,
 				CA9B9EB81AB7660A007E2B04 /* NSThread.swift */,
 				CA5C71861AD028D40030B2AC /* Array.swift */,
+				CA69BE291CAAEBF900204B18 /* UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -444,6 +448,7 @@
 				CA8CD5801B7A9F4C00DA8BF7 /* String.swift in Sources */,
 				CA8CD5841B7A9F5800DA8BF7 /* Synchronization.swift in Sources */,
 				CA8CD57F1B7A9F4A00DA8BF7 /* NSThread.swift in Sources */,
+				CA69BE2B1CAAEBF900204B18 /* UIView.swift in Sources */,
 				CA8CD57E1B7A9F4700DA8BF7 /* Array.swift in Sources */,
 				CA8CD5851B7A9F5C00DA8BF7 /* Exceptions.swift in Sources */,
 				CA8CD5911B7D43C700DA8BF7 /* TestHelper.swift in Sources */,
@@ -475,6 +480,7 @@
 				CA8804401A96327B00C00CAE /* Exceptions.swift in Sources */,
 				CA5C71871AD028D40030B2AC /* Array.swift in Sources */,
 				CA9B9EB91AB7660A007E2B04 /* NSThread.swift in Sources */,
+				CA69BE2A1CAAEBF900204B18 /* UIView.swift in Sources */,
 				CA9B9EB51AB764DB007E2B04 /* String.swift in Sources */,
 				CA8804431A969F7500C00CAE /* Synchronization.swift in Sources */,
 				CA8CD53B1B7A992C00DA8BF7 /* ObjectAssociation.swift in Sources */,
