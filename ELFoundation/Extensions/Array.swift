@@ -100,7 +100,7 @@ public extension Array {
 
 public extension Array where Element : Equatable {
     /**
-     Removes *the first* occurrence of `element` from this array.
+     Removes each occurrence of `element` from this array.
      
      **This method is deprecated. Please use `removeElement(element: Element)` instead.**
      */
@@ -139,9 +139,7 @@ public extension Array where Element : Equatable {
     @available(*, introduced=0.0.3)
     func excludeElements(elements: [Element]) -> [Element] {
         var array = self
-        for element in elements {
-            array.removeElement(element)
-        }
+        array.removeElements(elements)
         return array
     }
 }
