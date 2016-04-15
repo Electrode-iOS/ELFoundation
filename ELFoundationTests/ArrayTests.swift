@@ -42,12 +42,16 @@ class ArrayTests: XCTestCase {
 
         // result should have item2, item3, and item6 in it.
         // it should skip over item5 entirely since it's not in 'array'.
-        let result = arrayByRemoving(items: items, fromArray: array)
+        //let result = arrayByRemoving(items: items, fromArray: array)
+        let result = array.excludeElements(items)
 
         XCTAssertTrue(result.count == 3, "result should have 3 items in it!")
         XCTAssertTrue(result[0] == item2, "[0] should be item2!")
         XCTAssertTrue(result[1] == item3, "[0] should be item2!")
         XCTAssertTrue(result[2] == item6, "[0] should be item2!")
+        
+        XCTAssertTrue(array.count == 5)
+        XCTAssertTrue(array[0] == item1, "Item1 should still be in 'array'")
     }
     
     func testStack() {
@@ -77,7 +81,7 @@ class ArrayTests: XCTestCase {
     
     func testRemoveObject() {
         var someInts = [3, 1, 4, 2, 5]
-        someInts.removeObject(1)
+        someInts.removeElement(1)
         XCTAssertTrue(someInts == [3, 4, 2, 5])
     }
     
@@ -93,7 +97,7 @@ class ArrayTests: XCTestCase {
 
         someInts.removeElement(1)
 
-        XCTAssertEqual(someInts, [1, 2, 1])
+        XCTAssertEqual(someInts, [2])
     }
 
     func testRemoveElements() {
@@ -127,9 +131,7 @@ class ArrayTests: XCTestCase {
 
         array.removeElements(itemsToRemove)
 
-        XCTAssertTrue(array.count == 3, "array should have 3 items in it!")
-        XCTAssertTrue(array[0] == item1, "[0] should be item1!")
-        XCTAssertTrue(array[1] == item2, "[1] should be item2!")
-        XCTAssertTrue(array[2] == item1, "[2] should be item1!")
+        XCTAssertTrue(array.count == 1, "array should have 3 items in it!")
+        XCTAssertTrue(array[0] == item2, "[0] should be item1!")
     }
 }

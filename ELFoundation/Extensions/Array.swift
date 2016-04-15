@@ -15,12 +15,9 @@ Creates a new array by removing `items` from `fromArray`
 - parameter fromArray: Array to remove items from.
 - returns: A new array with the specified items removed.
 */
-@available(*, deprecated=0.0.3, message="Use array.removeElements(items) instead")
+@available(*, deprecated=0.0.3, message="Use array.excludeElements(items) instead")
 public func arrayByRemoving<T: Equatable>(items items: Array<T>, fromArray: Array<T>) -> Array<T> {
-    var result = fromArray
-    result.removeElements(items)
-
-    return result
+    return fromArray.excludeElements(items)
 }
 
 
@@ -113,17 +110,17 @@ public extension Array where Element : Equatable {
     }
 
     /**
-     Removes *the first* occurrence of `element` from this array.
+     Removes each occurrence of `element` from this array.
      */
     @available(*, introduced=0.0.3)
     mutating func removeElement(element: Element) {
-        if let index = self.indexOf(element) {
+        while let index = self.indexOf(element) {
             self.removeAtIndex(index)
         }
     }
 
     /**
-     Removes *the first* occurrence of each of the `elements` from this array.
+     Removes each occurrence of each of the `elements` from this array.
 
      - Parameter elements: Sequence containing elements to remove.
      */
@@ -132,5 +129,19 @@ public extension Array where Element : Equatable {
         for element in elements {
             self.removeElement(element)
         }
+    }
+
+    /**
+     Returns a copy of the array with each instance of items in `elements` removed.
+     
+     - Parameter elements: Sequence containing elements to remove.
+     */
+    @available(*, introduced=0.0.3)
+    func excludeElements(elements: [Element]) -> [Element] {
+        var array = self
+        for element in elements {
+            array.removeElement(element)
+        }
+        return array
     }
 }
