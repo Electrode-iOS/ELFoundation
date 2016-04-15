@@ -40,7 +40,7 @@ class ELFoundationTests: XCTestCase {
     func testSwizzling() {
         let foo = Foo()
         XCTAssertTrue(foo.returnsOne() == 1)
-        unsafeSwizzle(Foo.self, original: Selector("returnsOne"), replacement: Selector("returnsTwo"))
+        unsafeSwizzle(Foo.self, original: #selector(Foo.returnsOne), replacement: #selector(Foo.returnsTwo))
         XCTAssertTrue(foo.returnsOne() == 2)
     }
     
