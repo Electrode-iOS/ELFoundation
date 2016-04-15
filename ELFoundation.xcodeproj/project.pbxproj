@@ -47,12 +47,6 @@
 		CACF2A1D1A9614D20084EFAE /* ELFoundationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF2A1C1A9614D20084EFAE /* ELFoundationTests.swift */; };
 		CACF2A2E1A961C2D0084EFAE /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = CACF2A2C1A961C120084EFAE /* LICENSE */; };
 		CACF2A3F1A9624890084EFAE /* ELFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = CACF2A0F1A9614D20084EFAE /* ELFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CAEB711D1CB574D3003E1BC9 /* WeakArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEB711C1CB574D3003E1BC9 /* WeakArray.swift */; };
-		CAEB711E1CB574D3003E1BC9 /* WeakArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEB711C1CB574D3003E1BC9 /* WeakArray.swift */; };
-		CAEB71291CB57DFD003E1BC9 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEB71271CB57DFD003E1BC9 /* Box.swift */; };
-		CAEB712A1CB57DFD003E1BC9 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEB71271CB57DFD003E1BC9 /* Box.swift */; };
-		CAEB712B1CB57DFD003E1BC9 /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEB71281CB57DFD003E1BC9 /* Weak.swift */; };
-		CAEB712C1CB57DFD003E1BC9 /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEB71281CB57DFD003E1BC9 /* Weak.swift */; };
 		CAED57461CC189DA0003E9C9 /* NSURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED57451CC189DA0003E9C9 /* NSURL.swift */; };
 		CAED57471CC189DA0003E9C9 /* NSURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED57451CC189DA0003E9C9 /* NSURL.swift */; };
 		CAED57491CC18D670003E9C9 /* NSURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED57481CC18D670003E9C9 /* NSURLTests.swift */; };
@@ -121,9 +115,6 @@
 		CACF2A1C1A9614D20084EFAE /* ELFoundationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELFoundationTests.swift; sourceTree = "<group>"; };
 		CACF2A2C1A961C120084EFAE /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		CACF2A2D1A961C120084EFAE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		CAEB711C1CB574D3003E1BC9 /* WeakArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakArray.swift; sourceTree = "<group>"; };
-		CAEB71271CB57DFD003E1BC9 /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
-		CAEB71281CB57DFD003E1BC9 /* Weak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weak.swift; sourceTree = "<group>"; };
 		CAED57451CC189DA0003E9C9 /* NSURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURL.swift; sourceTree = "<group>"; };
 		CAED57481CC18D670003E9C9 /* NSURLTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURLTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -193,7 +184,6 @@
 				CA072A681C18BDE80059CA99 /* Swizzling.swift */,
 				CA8804421A969F7500C00CAE /* Synchronization.swift */,
 				CA8CD53A1B7A992C00DA8BF7 /* ObjectAssociation.swift */,
-				CAEB711C1CB574D3003E1BC9 /* WeakArray.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -243,7 +233,6 @@
 			isa = PBXGroup;
 			children = (
 				CACF2A0F1A9614D20084EFAE /* ELFoundation.h */,
-				CAEB71261CB57DFD003E1BC9 /* Containers */,
 				CA88043E1A96325400C00CAE /* Utilities */,
 				CA8804261A962E7000C00CAE /* Extensions */,
 				CA8804301A962FCD00C00CAE /* TestExtensions */,
@@ -281,15 +270,6 @@
 				CACF2A1B1A9614D20084EFAE /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		CAEB71261CB57DFD003E1BC9 /* Containers */ = {
-			isa = PBXGroup;
-			children = (
-				CAEB71271CB57DFD003E1BC9 /* Box.swift */,
-				CAEB71281CB57DFD003E1BC9 /* Weak.swift */,
-			);
-			path = Containers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -470,19 +450,16 @@
 			files = (
 				CAED57471CC189DA0003E9C9 /* NSURL.swift in Sources */,
 				CA8CD5831B7A9F5600DA8BF7 /* ObjectAssociation.swift in Sources */,
-				CAEB711E1CB574D3003E1BC9 /* WeakArray.swift in Sources */,
 				CA8CD5801B7A9F4C00DA8BF7 /* String.swift in Sources */,
 				CA8CD5841B7A9F5800DA8BF7 /* Synchronization.swift in Sources */,
 				CA8CD57F1B7A9F4A00DA8BF7 /* NSThread.swift in Sources */,
 				CA8CD57E1B7A9F4700DA8BF7 /* Array.swift in Sources */,
-				CAEB712A1CB57DFD003E1BC9 /* Box.swift in Sources */,
 				CA8CD5851B7A9F5C00DA8BF7 /* Exceptions.swift in Sources */,
 				CA8CD5911B7D43C700DA8BF7 /* TestHelper.swift in Sources */,
 				CA072A6A1C18BDE80059CA99 /* Swizzling.swift in Sources */,
 				CA39B1BF1C17661800D1A950 /* NSObject.swift in Sources */,
 				CA8CD5821B7A9F5200DA8BF7 /* NSBundle.swift in Sources */,
 				CA8CD5811B7A9F4F00DA8BF7 /* NSError.swift in Sources */,
-				CAEB712C1CB57DFD003E1BC9 /* Weak.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,19 +483,16 @@
 			files = (
 				CAED57461CC189DA0003E9C9 /* NSURL.swift in Sources */,
 				CA8804281A962E7000C00CAE /* NSBundle.swift in Sources */,
-				CAEB711D1CB574D3003E1BC9 /* WeakArray.swift in Sources */,
 				CA8804401A96327B00C00CAE /* Exceptions.swift in Sources */,
 				CA5C71871AD028D40030B2AC /* Array.swift in Sources */,
 				CA9B9EB91AB7660A007E2B04 /* NSThread.swift in Sources */,
 				CA9B9EB51AB764DB007E2B04 /* String.swift in Sources */,
-				CAEB71291CB57DFD003E1BC9 /* Box.swift in Sources */,
 				CA8804431A969F7500C00CAE /* Synchronization.swift in Sources */,
 				CA8CD53B1B7A992C00DA8BF7 /* ObjectAssociation.swift in Sources */,
 				CA072A691C18BDE80059CA99 /* Swizzling.swift in Sources */,
 				CA39B1BE1C17661800D1A950 /* NSObject.swift in Sources */,
 				CABA99941AC32EBE008D25B4 /* NSError.swift in Sources */,
 				CA8CD5901B7D42DB00DA8BF7 /* TestHelper.swift in Sources */,
-				CAEB712B1CB57DFD003E1BC9 /* Weak.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
