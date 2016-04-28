@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension NSObject {
+public extension NSObject {
     /**
     Returns the NSBundle containing self's class.
     */
@@ -20,14 +20,21 @@ extension NSObject {
     Returns the NSBundle containing self's class.
     */
     public func bundle() -> NSBundle {
-        return NSBundle(forClass: self.dynamicType)
+        return self.dynamicType.bundle()
     }
     
     /**
-    Returns a plugin ID based on bundleID and class name.
+    Returns a plugin ID based on bundleID.
     */
-    public func pluginID() -> String {
-        let bundleID = self.dynamicType.bundle().reverseBundleIdentifier()
-        return "\(bundleID).\(self.dynamicType)"
+    public static func pluginIdentifier() -> String {
+        let bundleID = self.bundle().bundleIdentifier!
+        return bundleID
+    }
+
+    /**
+     Returns a plugin ID based on bundleID.
+     */
+    public func pluginIdentifier() -> String {
+        return self.dynamicType.pluginIdentifier()
     }
 }

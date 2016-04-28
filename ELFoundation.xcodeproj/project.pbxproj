@@ -47,6 +47,10 @@
 		CACF2A1D1A9614D20084EFAE /* ELFoundationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF2A1C1A9614D20084EFAE /* ELFoundationTests.swift */; };
 		CACF2A2E1A961C2D0084EFAE /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = CACF2A2C1A961C120084EFAE /* LICENSE */; };
 		CACF2A3F1A9624890084EFAE /* ELFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = CACF2A0F1A9614D20084EFAE /* ELFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAED57461CC189DA0003E9C9 /* NSURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED57451CC189DA0003E9C9 /* NSURL.swift */; };
+		CAED57471CC189DA0003E9C9 /* NSURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED57451CC189DA0003E9C9 /* NSURL.swift */; };
+		CAED57491CC18D670003E9C9 /* NSURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED57481CC18D670003E9C9 /* NSURLTests.swift */; };
+		CAED574A1CC18D670003E9C9 /* NSURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED57481CC18D670003E9C9 /* NSURLTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +115,8 @@
 		CACF2A1C1A9614D20084EFAE /* ELFoundationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELFoundationTests.swift; sourceTree = "<group>"; };
 		CACF2A2C1A961C120084EFAE /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		CACF2A2D1A961C120084EFAE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CAED57451CC189DA0003E9C9 /* NSURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURL.swift; sourceTree = "<group>"; };
+		CAED57481CC18D670003E9C9 /* NSURLTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURLTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +162,7 @@
 				CA9B9EB41AB764DB007E2B04 /* String.swift */,
 				CA9B9EB81AB7660A007E2B04 /* NSThread.swift */,
 				CA5C71861AD028D40030B2AC /* Array.swift */,
+				CAED57451CC189DA0003E9C9 /* NSURL.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -248,9 +255,11 @@
 				CA5C71881AD031CE0030B2AC /* ArrayTests.swift */,
 				CACF2A1C1A9614D20084EFAE /* ELFoundationTests.swift */,
 				200045841B4CA4FE005C861B /* NSBundleTests.swift */,
-				C31BAB361C7C23590021CEB3 /* NSObjectTests.swift */,
-				C31BAB371C7C23590021CEB3 /* NSThreadTests.swift */,
-				C31BAB381C7C23590021CEB3 /* StringTests.swift */,
+				224524EF1C602E830004E821 /* NSObjectTests.swift */,
+				224524F11C60336D0004E821 /* StringTests.swift */,
+				224524F51C613D490004E821 /* NSThreadTests.swift */,
+				CA5C71881AD031CE0030B2AC /* ArrayTests.swift */,
+				CAED57481CC18D670003E9C9 /* NSURLTests.swift */,
 				CACF2A1A1A9614D20084EFAE /* Supporting Files */,
 			);
 			path = ELFoundationTests;
@@ -440,6 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAED57471CC189DA0003E9C9 /* NSURL.swift in Sources */,
 				CA8CD5831B7A9F5600DA8BF7 /* ObjectAssociation.swift in Sources */,
 				CA8CD5801B7A9F4C00DA8BF7 /* String.swift in Sources */,
 				CA8CD5841B7A9F5800DA8BF7 /* Synchronization.swift in Sources */,
@@ -459,7 +469,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA8CD5731B7A9DE900DA8BF7 /* NSBundleTests.swift in Sources */,
-				C31BAB3C1C7C236E0021CEB3 /* NSObjectTests.swift in Sources */,
+				224524F41C6040120004E821 /* StringTests.swift in Sources */,
+				CAED574A1CC18D670003E9C9 /* NSURLTests.swift in Sources */,
+				224524F31C60400F0004E821 /* NSObjectTests.swift in Sources */,
 				CA8CD5721B7A9DE600DA8BF7 /* ArrayTests.swift in Sources */,
 				C31BAB3D1C7C23710021CEB3 /* NSThreadTests.swift in Sources */,
 				C31BAB3E1C7C23740021CEB3 /* StringTests.swift in Sources */,
@@ -471,6 +483,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAED57461CC189DA0003E9C9 /* NSURL.swift in Sources */,
 				CA8804281A962E7000C00CAE /* NSBundle.swift in Sources */,
 				CA8804401A96327B00C00CAE /* Exceptions.swift in Sources */,
 				CA5C71871AD028D40030B2AC /* Array.swift in Sources */,
@@ -490,7 +503,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CACF2A1D1A9614D20084EFAE /* ELFoundationTests.swift in Sources */,
-				C31BAB391C7C23590021CEB3 /* NSObjectTests.swift in Sources */,
+				224524F21C60336D0004E821 /* StringTests.swift in Sources */,
+				CAED57491CC18D670003E9C9 /* NSURLTests.swift in Sources */,
+				224524F01C602E830004E821 /* NSObjectTests.swift in Sources */,
 				200045851B4CA4FE005C861B /* NSBundleTests.swift in Sources */,
 				C31BAB3A1C7C23590021CEB3 /* NSThreadTests.swift in Sources */,
 				C31BAB3B1C7C23590021CEB3 /* StringTests.swift in Sources */,
