@@ -34,7 +34,7 @@ public extension NSObject {
     /**
      Returns a plugin ID based on bundleID.
      */
-    public func pluginID() -> String {
+    public func pluginIdentifier() -> String {
         return self.dynamicType.pluginIdentifier()
     }
 }
