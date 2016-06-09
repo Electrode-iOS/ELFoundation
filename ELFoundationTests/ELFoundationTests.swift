@@ -13,11 +13,19 @@ class Foo: NSObject {
     dynamic func returnsOne() -> Int {
         return 1
     }
+    
+    dynamic class func returnsThree() -> Int {
+        return 3
+    }
 }
 
 extension Foo {
     dynamic func returnsTwo() -> Int {
         return 2
+    }
+    
+    dynamic class func returnsFour() -> Int {
+        return 4
     }
 }
 
@@ -37,11 +45,21 @@ class ELFoundationTests: XCTestCase {
         super.tearDown()
     }
     
-    func testSwizzling() {
+    func test_swizzleInstanceMethod_replacesImplementationWithSwizzledSelector() {
         let foo = Foo()
         XCTAssertTrue(foo.returnsOne() == 1)
-        unsafeSwizzle(Foo.self, original: #selector(Foo.returnsOne), replacement: #selector(Foo.returnsTwo))
+        
+        Foo.swizzleInstanceMethod(#selector(Foo.returnsOne), swizzledSelector: #selector(Foo.returnsTwo))
+        
         XCTAssertTrue(foo.returnsOne() == 2)
+    }
+    
+    func test_swizzleClassMethod_replacesImplementationWithSwizzledSelector() {
+        XCTAssertTrue(Foo.returnsThree() == 3)
+        
+        Foo.swizzleClassMethod(#selector(Foo.returnsThree), swizzledSelector:  #selector(Foo.returnsFour))
+        
+        XCTAssertTrue(Foo.returnsThree() == 4)
     }
     
     func testObjectAssociation() {
