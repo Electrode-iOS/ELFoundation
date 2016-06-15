@@ -16,7 +16,7 @@ public extension String {
     - returns: A unique string identifier.
     */
     static public func GUID() -> String {
-        return NSUUID().UUIDString
+        return UUID().uuidString
     }
     
 }

@@ -17,7 +17,7 @@ and executes the supplied closure.
 
 Example: synchronized(self) { doSomething() }
 */
-public func synchronized(lock: AnyObject, @noescape closure: () -> Void) {
+public func synchronized(_ lock: AnyObject, @noescape closure: () -> Void) {
     objc_sync_enter(lock)
     closure()
     objc_sync_exit(lock)
@@ -33,7 +33,7 @@ and executes the supplied closure, returning the type T.
 
 Example: let running = synchronized(self) { return true }
 */
-public func synchronized<T>(lock: AnyObject, @noescape closure: () -> T) -> T {
+public func synchronized<T>(_ lock: AnyObject, @noescape closure: () -> T) -> T {
     objc_sync_enter(lock)
     let result: T = closure()
     objc_sync_exit(lock)
@@ -58,7 +58,7 @@ final public class Spinlock {
     - parameter closure: Closure to execute inside of the lock.
     - returns: False if it failed to acquire the lock, otherwise true.
     */
-    public func tryaround(@noescape closure: () -> Void) -> Bool {
+    public func tryaround(@noescape _ closure: () -> Void) -> Bool {
         let held = OSSpinLockTry(&spinlock)
         if !held {
             closure()
@@ -72,7 +72,7 @@ final public class Spinlock {
     
     - parameter closure: Closure to execute inside of the lock.
     */
-    public func around(@noescape closure: () -> Void) {
+    public func around(@noescape _ closure: () -> Void) {
         OSSpinLockLock(&spinlock)
         closure()
         OSSpinLockUnlock(&spinlock)
@@ -84,7 +84,7 @@ final public class Spinlock {
     - parameter closure: Closure to execute inside of the lock.
     - returns: The result of the closure.
     */
-    public func around<T>(@noescape closure: () -> T) -> T {
+    public func around<T>(@noescape _ closure: () -> T) -> T {
         OSSpinLockLock(&spinlock)
         let result: T = closure()
         OSSpinLockUnlock(&spinlock)

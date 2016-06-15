@@ -19,7 +19,7 @@ import Foundation
 
 public extension NSObject {
     /// Swizzles a class method on an Objective-C object.
-    public class func swizzleClassMethod(originalSelector: Selector, swizzledSelector:Selector) {
+    public class func swizzleClassMethod(_ originalSelector: Selector, swizzledSelector:Selector) {
         if let c: AnyClass = object_getClass(self) {
             let originalMethod = class_getClassMethod(c, originalSelector)
             let swizzledMethod = class_getClassMethod(c, swizzledSelector)
@@ -35,7 +35,7 @@ public extension NSObject {
     }
     
     /// Swizzles an instance method on an Objective-C object.
-    public class func swizzleInstanceMethod(originalSelector: Selector, swizzledSelector:Selector) {
+    public class func swizzleInstanceMethod(_ originalSelector: Selector, swizzledSelector:Selector) {
         let originalMethod = class_getInstanceMethod(self, originalSelector)
         let swizzledMethod = class_getInstanceMethod(self, swizzledSelector)
         

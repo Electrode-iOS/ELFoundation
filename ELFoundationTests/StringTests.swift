@@ -22,9 +22,9 @@ class StringTests: XCTestCase {
 
     func testGUID() {
         do {
-            let regex = try NSRegularExpression(pattern: "^.{8}-.{4}-.{4}-.{4}-.{12}$", options: [])
+            let regex = try RegularExpression(pattern: "^.{8}-.{4}-.{4}-.{4}-.{12}$", options: [])
             let guid = String.GUID()
-            let numMatches = regex.numberOfMatchesInString(String.GUID(), options: [], range: NSRange(location: 0, length: guid.characters.count))
+            let numMatches = regex.numberOfMatches(in: String.GUID(), options: [], range: NSRange(location: 0, length: guid.characters.count))
             XCTAssertTrue(numMatches == 1)
         } catch {
             XCTAssertTrue(false)

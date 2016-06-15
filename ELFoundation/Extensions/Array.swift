@@ -15,8 +15,8 @@ Creates a new array by removing `items` from `fromArray`
 - parameter fromArray: Array to remove items from.
 - returns: A new array with the specified items removed.
 */
-@available(*, deprecated=0.0.3, message="Use array.excludeElements(items) instead")
-public func arrayByRemoving<T: Equatable>(items items: Array<T>, fromArray: Array<T>) -> Array<T> {
+@available(*, deprecated:0.0.3, message:"Use array.excludeElements(items) instead")
+public func arrayByRemoving<T: Equatable>(items: Array<T>, fromArray: Array<T>) -> Array<T> {
     return fromArray.excludeElements(items)
 }
 
@@ -32,7 +32,7 @@ public extension Array {
             $0.doSomething()
         }
     */
-    func each(block: (object: Element) -> Void) {
+    func each(_ block: (object: Element) -> Void) {
         for object in self {
             block(object: object)
         }
@@ -45,8 +45,8 @@ public extension Array {
             object.doSomethingWithIndex(index)
         }
     */
-    func eachWithIndex(block: (object: Element, index: Int) -> Void) {
-        for (index, object) in self.enumerate() {
+    func eachWithIndex(_ block: (object: Element, index: Int) -> Void) {
+        for (index, object) in self.enumerated() {
             block(object: object, index: index)
         }
     }
@@ -58,7 +58,7 @@ public extension Array {
 public extension Array {
     
     //Stack - LIFO
-    mutating func push(newElement: Element) {
+    mutating func push(_ newElement: Element) {
         self.append(newElement)
     }
     
@@ -77,13 +77,13 @@ public extension Array {
     }
     
     //Queue - FIFO
-    mutating func enqueue(newElement: Element) {
+    mutating func enqueue(_ newElement: Element) {
         self.append(newElement)
     }
     
     mutating func dequeue() -> Element? {
         if self.count > 0 {
-            return self.removeAtIndex(0)
+            return self.remove(at: 0)
         }
         return nil
     }
@@ -104,18 +104,18 @@ public extension Array where Element : Equatable {
      
      **This method is deprecated. Please use `removeElement(element: Element)` instead.**
      */
-    @available(*, deprecated=0.0.3, renamed="removeElement")
-    mutating func removeObject(object : Generator.Element) {
+    @available(*, deprecated:0.0.3, renamed:"removeElement")
+    mutating func removeObject(_ object : Iterator.Element) {
         self.removeElement(object)
     }
 
     /**
      Removes each occurrence of `element` from this array.
      */
-    @available(*, introduced=0.0.3)
-    mutating func removeElement(element: Element) {
-        while let index = self.indexOf(element) {
-            self.removeAtIndex(index)
+    @available(*, introduced:0.0.3)
+    mutating func removeElement(_ element: Element) {
+        while let index = self.index(of: element) {
+            self.remove(at: index)
         }
     }
 
@@ -124,8 +124,8 @@ public extension Array where Element : Equatable {
 
      - Parameter elements: Sequence containing elements to remove.
      */
-    @available(*, introduced=0.0.3)
-    mutating func removeElements<S: SequenceType where S.Generator.Element == Element>(elements: S) {
+    @available(*, introduced:0.0.3)
+    mutating func removeElements<S: Sequence where S.Iterator.Element == Element>(_ elements: S) {
         for element in elements {
             self.removeElement(element)
         }
@@ -136,8 +136,8 @@ public extension Array where Element : Equatable {
      
      - Parameter elements: Sequence containing elements to remove.
      */
-    @available(*, introduced=0.0.3)
-    func excludeElements(elements: [Element]) -> [Element] {
+    @available(*, introduced:0.0.3)
+    func excludeElements(_ elements: [Element]) -> [Element] {
         var array = self
         array.removeElements(elements)
         return array
