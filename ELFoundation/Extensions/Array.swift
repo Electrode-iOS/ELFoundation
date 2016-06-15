@@ -62,6 +62,7 @@ public extension Array {
         self.append(newElement)
     }
     
+    @discardableResult
     mutating func pop() -> Element? {
         if self.count > 0 {
             return self.removeLast()
@@ -81,6 +82,7 @@ public extension Array {
         self.append(newElement)
     }
     
+    @discardableResult
     mutating func dequeue() -> Element? {
         if self.count > 0 {
             return self.remove(at: 0)
