@@ -1,10 +1,13 @@
-# ELFoundation [![Build Status](https://travis-ci.org/Electrode-iOS/ELFoundation.svg?branch=master)](https://travis-ci.org/Electrode-iOS/ELFoundation)
+# ELFoundation 
+
+[![Version](https://img.shields.io/badge/version-v1.0.1-blue.svg)](https://github.com/Electrode-iOS/ELFoundation/releases/latest)
+[![Build Status](https://travis-ci.org/Electrode-iOS/ELFoundation.svg?branch=master)](https://travis-ci.org/Electrode-iOS/ELFoundation)
 
 ELFoundation is a Swift framework that provides a base layer of functionality for Electrode-iOS modules and applications such as helper extensions, utility classes, and other generic constructs.
 
 ## Requirements
 
-ELFoundation requires Swift 2.1 and Xcode 7.2.
+ELFoundation requires Swift 2.2 and Xcode 7.3.
 
 ## Installation
 
