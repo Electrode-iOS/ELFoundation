@@ -8,26 +8,22 @@
 
 import Foundation
 
-// this needs to move into whatever our equiv for SDFoundation is.
-
-public extension NSBundle {
-    
+public extension Bundle {
     /**
-    Returns the reverse DNS style bundle identifier
+     Returns the reverse DNS style bundle identifier
 
-    - returns: The reverse DNS style bundle identifier
+     - returns: The reverse DNS style bundle identifier
     
-    Example: com.walmartlabs.thgfoundation
+     Example: com.walmartlabs.thgfoundation
     */
     public func reverseBundleIdentifier() -> String? {
         if let id = bundleIdentifier {
-            let components: [String] = id.componentsSeparatedByString(".")
-            let reverseComponents = Array(components.reverse())
-            let result = reverseComponents.joinWithSeparator(".")
+            let components: [String] = id.components(separatedBy: ".")
+            let reverseComponents = Array(components.reversed())
+            let result = reverseComponents.joined(separator: ".")
             return result
         }
         
         return nil
     }
-    
 }

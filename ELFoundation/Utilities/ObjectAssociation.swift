@@ -16,19 +16,19 @@ final private class Wrapper<T>: NSObject {
 }
 
 /**
-Sets an value to be associated with 'object'.  Be careful when using swift types 
-like Arrays and whatnot where mutability is involved.
+ Sets an value to be associated with 'object'.  Be careful when using swift types
+ like Arrays and whatnot where mutability is involved.
 */
-public func setAssociatedObject<T>(object: AnyObject, value: T, associativeKey: UnsafePointer<Void>, policy: objc_AssociationPolicy) {
+public func setAssociatedObject<T>(_ object: AnyObject, value: T, associativeKey: UnsafeRawPointer, policy: objc_AssociationPolicy) {
     //print("set, T = \(T.self)")
     objc_setAssociatedObject(object, associativeKey, Wrapper(value),  policy)
 }
 
 /**
-Gets a value associated with 'object'.  Be careful when using swift types
-like Arrays and whatnot where mutability is involved.
+ Gets a value associated with 'object'.  Be careful when using swift types
+ like Arrays and whatnot where mutability is involved.
 */
-public func getAssociatedObject<T>(object: AnyObject, associativeKey: UnsafePointer<Void>) -> T! {
+public func getAssociatedObject<T>(_ object: AnyObject, associativeKey: UnsafeRawPointer) -> T! {
     let result = objc_getAssociatedObject(object, associativeKey)
     //print("get, T = \(T.self)")
     if let v = result as? Wrapper<T> {

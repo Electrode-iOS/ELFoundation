@@ -8,9 +8,8 @@
 
 import Foundation
 
-public extension NSThread {
-
-    private static let formatterCacheKey = "ELFoundation.dateFormatter"
+public extension Thread {
+    fileprivate static let formatterCacheKey = "ELFoundation.dateFormatter"
 
     /**
      Creates and returns a date formatter for the format and locale. The first time a format is passed in
@@ -22,20 +21,20 @@ public extension NSThread {
      - parameter locale: The locale for the date formatter.
      - returns: The date formatter.
      */
-    public class func dateFormatter(format: String, locale: NSLocale? = NSLocale.currentLocale()) -> NSDateFormatter {
-        let threadDictionary = NSThread.currentThread().threadDictionary
+    public class func dateFormatter(_ format: String, locale: Locale? = Locale.current) -> DateFormatter {
+        let threadDictionary = Thread.current.threadDictionary
 
-        var cache: Dictionary<String, NSDateFormatter>? = threadDictionary.objectForKey(formatterCacheKey) as? Dictionary<String, NSDateFormatter>
+        var cache: Dictionary<String, DateFormatter>? = threadDictionary.object(forKey: formatterCacheKey) as? Dictionary<String, DateFormatter>
         if cache == nil {
-            cache = Dictionary<String, NSDateFormatter>()
+            cache = Dictionary<String, DateFormatter>()
         }
 
-        let formatKey = format + "_" + locale!.localeIdentifier
+        let formatKey = format + "_" + locale!.identifier
         if let existing = cache?[formatKey] {
             return existing
         }
 
-        let result = NSDateFormatter()
+        let result = DateFormatter()
         result.locale = locale
         result.dateFormat = format
         cache?[formatKey] = result

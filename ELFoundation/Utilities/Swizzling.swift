@@ -8,18 +8,16 @@
 
 import Foundation
 
-/*
- 
+/**
  For the love of pete and the Flying Spaghetti Monster...
  
  Do not use this stuff unless you've inquired with no less than a Rabbi, a Priest,
  and a Shaman... and a few other engineers to figure out if there is a better way.
  
- */
-
+*/
 public extension NSObject {
     /// Swizzles a class method on an Objective-C object.
-    public class func swizzleClassMethod(originalSelector: Selector, swizzledSelector:Selector) {
+    public class func swizzleClassMethod(_ originalSelector: Selector, swizzledSelector:Selector) {
         if let c: AnyClass = object_getClass(self) {
             let originalMethod = class_getClassMethod(c, originalSelector)
             let swizzledMethod = class_getClassMethod(c, swizzledSelector)
@@ -35,7 +33,7 @@ public extension NSObject {
     }
     
     /// Swizzles an instance method on an Objective-C object.
-    public class func swizzleInstanceMethod(originalSelector: Selector, swizzledSelector:Selector) {
+    public class func swizzleInstanceMethod(_ originalSelector: Selector, swizzledSelector:Selector) {
         let originalMethod = class_getInstanceMethod(self, originalSelector)
         let swizzledMethod = class_getInstanceMethod(self, swizzledSelector)
         
@@ -49,24 +47,3 @@ public extension NSObject {
     }
     
 }
-
-
-/*
- 
- Future idea:
- 
- 
- dr_sneed [11:10 AM]
- you know what would be neat?
- 
- [11:11]
- a hookMethod(someSelector, options: .After) { … }
- 
- [11:11]
- so i could have my block execute after someSelector is called.
- 
- [11:11]
- or .Before
- 
- */
-

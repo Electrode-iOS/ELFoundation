@@ -63,7 +63,7 @@ class ArrayTests: XCTestCase {
         XCTAssertTrue(someInts.peekAtStack() == 2)
         XCTAssertTrue(someInts.pop() == 2)
         XCTAssertTrue(someInts == [1])
-        someInts.pop()
+        _ = someInts.pop()
         XCTAssertNil(someInts.pop())
     }
     
@@ -75,7 +75,7 @@ class ArrayTests: XCTestCase {
         XCTAssertTrue(someInts == [1, 2])
         XCTAssertTrue(someInts.peekAtQueue() == 1)
         XCTAssertTrue(someInts.dequeue() == 1)
-        someInts.dequeue()
+        _ = someInts.dequeue()
         XCTAssertNil(someInts.dequeue())
     }
     

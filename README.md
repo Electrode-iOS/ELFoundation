@@ -4,11 +4,11 @@
 [![Build Status](https://travis-ci.org/Electrode-iOS/ELFoundation.svg?branch=master)](https://travis-ci.org/Electrode-iOS/ELFoundation)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-ELFoundation is a Swift framework that provides a base layer of functionality for Electrode-iOS frameworks and applications such as helper extensions and utility classes.
+ELFoundation is a collection of Swift utilities for iOS development.
 
 ## Requirements
 
-ELFoundation requires Swift 2.3 and Xcode 8.
+ELFoundation requires Swift 3 and Xcode 8.
 
 ## Installation
 
