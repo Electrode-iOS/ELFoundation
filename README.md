@@ -31,11 +31,9 @@ Install by adding `ELFoundation.xcodeproj` to your project and configuring your 
 * `Spinlock` - A basic spinlock implementation for synchronization.
 * `Object Association` - Objective-C style object association.
 * `Swizzling` - Objective-C style swizzling.
-* `String (extensions)` - Handy extensions.
 * `Array (extensions)` - Handy extensions.
 * `NSObject (extensions)` - Handy extensions.
 * `NSThread (extensions)` - Handy extensions.
-* `NSError (extensions)` - Handy extensions.
 * `NSBundle (extensions)` - Handy extensions.
 * `XCTestCase (extensions)` - Gets XCTAssertThrows working in Swift.
 

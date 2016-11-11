@@ -33,7 +33,6 @@
 		CA8CD5731B7A9DE900DA8BF7 /* NSBundleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200045841B4CA4FE005C861B /* NSBundleTests.swift */; };
 		CA8CD57E1B7A9F4700DA8BF7 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5C71861AD028D40030B2AC /* Array.swift */; };
 		CA8CD57F1B7A9F4A00DA8BF7 /* NSThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9B9EB81AB7660A007E2B04 /* NSThread.swift */; };
-		CA8CD5811B7A9F4F00DA8BF7 /* NSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA99931AC32EBE008D25B4 /* NSError.swift */; };
 		CA8CD5821B7A9F5200DA8BF7 /* NSBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8804271A962E7000C00CAE /* NSBundle.swift */; };
 		CA8CD5831B7A9F5600DA8BF7 /* ObjectAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8CD53A1B7A992C00DA8BF7 /* ObjectAssociation.swift */; };
 		CA8CD5841B7A9F5800DA8BF7 /* Synchronization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8804421A969F7500C00CAE /* Synchronization.swift */; };
@@ -41,7 +40,6 @@
 		CA8CD5901B7D42DB00DA8BF7 /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8CD58F1B7D42DB00DA8BF7 /* TestHelper.swift */; };
 		CA8CD5911B7D43C700DA8BF7 /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8CD58F1B7D42DB00DA8BF7 /* TestHelper.swift */; };
 		CA9B9EB91AB7660A007E2B04 /* NSThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9B9EB81AB7660A007E2B04 /* NSThread.swift */; };
-		CABA99941AC32EBE008D25B4 /* NSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA99931AC32EBE008D25B4 /* NSError.swift */; };
 		CACF2A161A9614D20084EFAE /* ELFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CACF2A0A1A9614D20084EFAE /* ELFoundation.framework */; };
 		CACF2A1D1A9614D20084EFAE /* ELFoundationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF2A1C1A9614D20084EFAE /* ELFoundationTests.swift */; };
 		CACF2A2E1A961C2D0084EFAE /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = CACF2A2C1A961C120084EFAE /* LICENSE */; };
@@ -106,7 +104,6 @@
 		CA8CD56A1B7A9DCB00DA8BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA8CD58F1B7D42DB00DA8BF7 /* TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
 		CA9B9EB81AB7660A007E2B04 /* NSThread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSThread.swift; sourceTree = "<group>"; };
-		CABA99931AC32EBE008D25B4 /* NSError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSError.swift; sourceTree = "<group>"; };
 		CACF2A0A1A9614D20084EFAE /* ELFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ELFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CACF2A0E1A9614D20084EFAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CACF2A0F1A9614D20084EFAE /* ELFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELFoundation.h; sourceTree = "<group>"; };
@@ -158,7 +155,6 @@
 			children = (
 				CA8804271A962E7000C00CAE /* NSBundle.swift */,
 				CA39B1BD1C17661800D1A950 /* NSObject.swift */,
-				CABA99931AC32EBE008D25B4 /* NSError.swift */,
 				CA9B9EB81AB7660A007E2B04 /* NSThread.swift */,
 				CA5C71861AD028D40030B2AC /* Array.swift */,
 				CAED57451CC189DA0003E9C9 /* NSURL.swift */,
@@ -459,7 +455,6 @@
 				CA072A6A1C18BDE80059CA99 /* Swizzling.swift in Sources */,
 				CA39B1BF1C17661800D1A950 /* NSObject.swift in Sources */,
 				CA8CD5821B7A9F5200DA8BF7 /* NSBundle.swift in Sources */,
-				CA8CD5811B7A9F4F00DA8BF7 /* NSError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,7 +486,6 @@
 				CA8CD53B1B7A992C00DA8BF7 /* ObjectAssociation.swift in Sources */,
 				CA072A691C18BDE80059CA99 /* Swizzling.swift in Sources */,
 				CA39B1BE1C17661800D1A950 /* NSObject.swift in Sources */,
-				CABA99941AC32EBE008D25B4 /* NSError.swift in Sources */,
 				CA8CD5901B7D42DB00DA8BF7 /* TestHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
