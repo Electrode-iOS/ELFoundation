@@ -20,7 +20,6 @@ final private class Wrapper<T>: NSObject {
  like Arrays and whatnot where mutability is involved.
 */
 public func setAssociatedObject<T>(_ object: AnyObject, value: T, associativeKey: UnsafeRawPointer, policy: objc_AssociationPolicy) {
-    //print("set, T = \(T.self)")
     objc_setAssociatedObject(object, associativeKey, Wrapper(value),  policy)
 }
 
@@ -30,7 +29,6 @@ public func setAssociatedObject<T>(_ object: AnyObject, value: T, associativeKey
 */
 public func getAssociatedObject<T>(_ object: AnyObject, associativeKey: UnsafeRawPointer) -> T! {
     let result = objc_getAssociatedObject(object, associativeKey)
-    //print("get, T = \(T.self)")
     if let v = result as? Wrapper<T> {
         return v.value
     } else {
