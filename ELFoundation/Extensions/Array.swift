@@ -8,19 +8,6 @@
 
 import Foundation
 
-/**
- Creates a new array by removing `items` from `fromArray`
-
- - parameter items: Array of items to remove.
- - parameter fromArray: Array to remove items from.
- - returns: A new array with the specified items removed.
-*/
-@available(*, deprecated: 0.0.3, message: "Use array.excludeElements(items) instead")
-public func arrayByRemoving<T: Equatable>(items: Array<T>, fromArray: Array<T>) -> Array<T> {
-    return fromArray.excludeElements(items)
-}
-
-
 // MARK: Iteration helpers
 
 public extension Array {
@@ -100,18 +87,7 @@ public extension Array {
 public extension Array where Element : Equatable {
     /**
      Removes each occurrence of `element` from this array.
-     
-     **This method is deprecated. Please use `removeElement(element: Element)` instead.**
      */
-    @available(*, deprecated: 0.0.3, renamed: "removeElement")
-    mutating func removeObject(_ object : Iterator.Element) {
-        self.removeElement(object)
-    }
-
-    /**
-     Removes each occurrence of `element` from this array.
-     */
-    @available(*, introduced: 0.0.3)
     mutating func removeElement(_ element: Element) {
         while let index = self.index(of: element) {
             self.remove(at: index)
@@ -123,7 +99,6 @@ public extension Array where Element : Equatable {
 
      - Parameter elements: Sequence containing elements to remove.
      */
-    @available(*, introduced: 0.0.3)
     mutating func removeElements<S: Sequence>(_ elements: S) where S.Iterator.Element == Element {
         for element in elements {
             self.removeElement(element)
@@ -135,7 +110,6 @@ public extension Array where Element : Equatable {
      
      - Parameter elements: Sequence containing elements to remove.
      */
-    @available(*, introduced: 0.0.3)
     func excludeElements(_ elements: [Element]) -> [Element] {
         var array = self
         array.removeElements(elements)
