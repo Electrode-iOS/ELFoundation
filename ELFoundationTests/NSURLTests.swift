@@ -22,7 +22,7 @@ class NSURLTests: XCTestCase {
     }
 
     func testQueryDictionary() {
-        let url = NSURL(string: "http://blah.com/something?key1=value1&key2=value2&key3=this%20be%20value%203%2C%20y0")
+        let url = URL(string: "http://blah.com/something?key1=value1&key2=value2&key3=this%20be%20value%203%2C%20y0")
         
         let dict = url!.queryDictionary!
         

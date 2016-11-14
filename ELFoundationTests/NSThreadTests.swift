@@ -25,8 +25,8 @@ class NSThreadTests: XCTestCase {
         let RFC3339TestDateDescription = "1996-12-20 00:39:57 +0000"
         let RFC3339DateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
         
-        let df = NSThread.dateFormatter(RFC3339DateFormat)
-        let date = df.dateFromString(RFC3339TestDate)
+        let df = Thread.dateFormatter(RFC3339DateFormat)
+        let date = df.date(from: RFC3339TestDate)
         XCTAssertTrue(date!.description == RFC3339TestDateDescription)
     }
 

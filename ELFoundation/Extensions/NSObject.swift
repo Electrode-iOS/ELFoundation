@@ -12,15 +12,15 @@ public extension NSObject {
     /**
     Returns the NSBundle containing self's class.
     */
-    public static func bundle() -> NSBundle {
-        return NSBundle(forClass: self)
+    public static func bundle() -> Bundle {
+        return Bundle(for: self)
     }
     
     /**
     Returns the NSBundle containing self's class.
     */
-    public func bundle() -> NSBundle {
-        return self.dynamicType.bundle()
+    public func bundle() -> Bundle {
+        return type(of: self).bundle()
     }
     
     /**
@@ -35,6 +35,6 @@ public extension NSObject {
      Returns a plugin ID based on bundleID.
      */
     public func pluginIdentifier() -> String {
-        return self.dynamicType.pluginIdentifier()
+        return type(of: self).pluginIdentifier()
     }
 }

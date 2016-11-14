@@ -9,14 +9,13 @@
 import Foundation
 
 public extension String {
-
     /**
-    Returns a GUID in the form of "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX".
+     Returns a GUID in the form of "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX".
 
-    - returns: A unique string identifier.
+     - returns: A unique string identifier.
     */
     static public func GUID() -> String {
-        return NSUUID().UUIDString
+        return UUID().uuidString
     }
     
 }

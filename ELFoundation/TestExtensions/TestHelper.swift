@@ -9,21 +9,18 @@
 import Foundation
 
 /**
-Determines if a given block of code is being run within the context of
-a unit test.
+ Determines if a given block of code is being run within the context of
+ a unit test.
 */
 public func isInUnitTest() -> Bool {
-    // useful for debugging validity of the environment check below.
-    //print(NSProcessInfo.processInfo().environment)
-    if NSProcessInfo.processInfo().environment["XCTestConfigurationFilePath"] != nil {
+    if ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil {
         return true
     }
     return false
 }
 
-
-private enum WaitConditionError: ErrorType {
-    case Timeout
+private enum WaitConditionError: Error {
+    case timeout
 }
 
 extension NSObject {
@@ -33,22 +30,21 @@ extension NSObject {
     - parameter timeout: The timeout, in seconds.
     - parameter conditionsCheck: A block that performs the condition check and returns true/false.
     */
-    public func waitForConditionsWithTimeout(timeout: NSTimeInterval, conditionsCheck: () -> Bool) throws {
+    public func waitForConditionsWithTimeout(_ timeout: TimeInterval, conditionsCheck: () -> Bool) throws {
         if isInUnitTest() {
             var condition = false
-            let startTime = NSDate()
+            let startTime = Date()
             
             while (!condition) {
-                NSRunLoop.currentRunLoop().runUntilDate(NSDate.distantPast())
+                RunLoop.current.run(until: Date.distantPast)
                 condition = conditionsCheck()
-                let currentTime = NSDate().timeIntervalSinceDate(startTime)
+                let currentTime = Date().timeIntervalSince(startTime)
                 if currentTime > timeout {
-                    throw WaitConditionError.Timeout
+                    throw WaitConditionError.timeout
                 }
             }
         } else {
             exceptionFailure("waitForConditionsWithTimeout should only be used in unit tests.")
         }
     }
-
 }

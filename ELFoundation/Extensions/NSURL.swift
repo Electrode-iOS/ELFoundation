@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension NSURL {
+public extension URL {
     /**
     Breaks down a query string (ie: "") into it's decoded parts.
     */
@@ -16,14 +16,14 @@ public extension NSURL {
         if let queryString = query {
             var result = [String: String]()
             
-            let components = queryString.componentsSeparatedByString("&")
+            let components = queryString.components(separatedBy: "&")
             for item in components {
-                let pair = item.componentsSeparatedByString("=")
+                let pair = item.components(separatedBy: "=")
                 let key = pair[0]
                 let value = pair[1]
                 
-                let decodedKey = key.stringByRemovingPercentEncoding
-                let decodedValue = value.stringByRemovingPercentEncoding
+                let decodedKey = key.removingPercentEncoding
+                let decodedValue = value.removingPercentEncoding
                 
                 // if we can't get non-optionals, it's unable to be decoded.
                 if let key = decodedKey, let value = decodedValue {
