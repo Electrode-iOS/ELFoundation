@@ -633,6 +633,7 @@
 				PRODUCT_NAME = ELFoundation;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 			};
 			name = QADeployment;
 		};
@@ -647,6 +648,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.walmartlabs.ELFoundation-osxTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_VERSION = 2.3;
 			};
 			name = QADeployment;
 		};
@@ -668,6 +670,7 @@
 				PRODUCT_NAME = ELFoundation;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -689,6 +692,7 @@
 				PRODUCT_NAME = ELFoundation;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -703,6 +707,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.walmartlabs.ELFoundation-osxTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -717,6 +722,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.walmartlabs.ELFoundation-osxTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
