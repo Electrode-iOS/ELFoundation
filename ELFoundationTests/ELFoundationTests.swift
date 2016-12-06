@@ -17,9 +17,7 @@ class Foo: NSObject {
     dynamic class func returnsThree() -> Int {
         return 3
     }
-}
 
-extension Foo {
     dynamic func returnsTwo() -> Int {
         return 2
     }

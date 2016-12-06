@@ -51,12 +51,7 @@ public extension Array {
         }
     }
     
-}
-
-// MARK: Stack and Queue helpers
-
-public extension Array {
-    
+    // MARK: Stack and Queue helpers
     //Stack - LIFO
     mutating func push(newElement: Element) {
         self.append(newElement)
