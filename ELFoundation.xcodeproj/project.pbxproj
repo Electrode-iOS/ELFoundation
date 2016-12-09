@@ -392,7 +392,6 @@
 					};
 					CACF2A141A9614D20084EFAE = {
 						CreatedOnToolsVersion = 6.3;
-						DevelopmentTeam = DXZ5VF8836;
 						LastSwiftMigration = 0800;
 					};
 				};
@@ -604,7 +603,7 @@
 		20DC78801BFEA22A004AF8C8 /* QADeployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = DXZ5VF8836;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -865,7 +864,7 @@
 		CACF2A241A9614D20084EFAE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = DXZ5VF8836;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -882,7 +881,7 @@
 		CACF2A251A9614D20084EFAE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = DXZ5VF8836;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ELFoundationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
