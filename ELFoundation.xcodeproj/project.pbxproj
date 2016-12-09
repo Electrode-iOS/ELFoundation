@@ -14,8 +14,6 @@
 		17D3490B1D0A24B400D7EBC3 /* NSThreadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D349061D0A246200D7EBC3 /* NSThreadTests.swift */; };
 		17D3490C1D0A24B700D7EBC3 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D349071D0A246200D7EBC3 /* StringTests.swift */; };
 		200045851B4CA4FE005C861B /* NSBundleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200045841B4CA4FE005C861B /* NSBundleTests.swift */; };
-		C31BAB3D1C7C23710021CEB3 /* NSThreadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31BAB371C7C23590021CEB3 /* NSThreadTests.swift */; };
-		C31BAB3E1C7C23740021CEB3 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31BAB381C7C23590021CEB3 /* StringTests.swift */; };
 		CA072A691C18BDE80059CA99 /* Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA072A681C18BDE80059CA99 /* Swizzling.swift */; };
 		CA072A6A1C18BDE80059CA99 /* Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA072A681C18BDE80059CA99 /* Swizzling.swift */; };
 		CA39B1BE1C17661800D1A950 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39B1BD1C17661800D1A950 /* NSObject.swift */; };
@@ -89,8 +87,6 @@
 		17D349061D0A246200D7EBC3 /* NSThreadTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSThreadTests.swift; sourceTree = "<group>"; };
 		17D349071D0A246200D7EBC3 /* StringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
 		200045841B4CA4FE005C861B /* NSBundleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBundleTests.swift; sourceTree = "<group>"; };
-		C31BAB371C7C23590021CEB3 /* NSThreadTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSThreadTests.swift; sourceTree = "<group>"; };
-		C31BAB381C7C23590021CEB3 /* StringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
 		CA072A681C18BDE80059CA99 /* Swizzling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swizzling.swift; sourceTree = "<group>"; };
 		CA39B1BD1C17661800D1A950 /* NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
 		CA5C71861AD028D40030B2AC /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
@@ -475,11 +471,9 @@
 				CA8CD5731B7A9DE900DA8BF7 /* NSBundleTests.swift in Sources */,
 				CAED574A1CC18D670003E9C9 /* NSURLTests.swift in Sources */,
 				CA8CD5721B7A9DE600DA8BF7 /* ArrayTests.swift in Sources */,
-				C31BAB3D1C7C23710021CEB3 /* NSThreadTests.swift in Sources */,
-				C31BAB3E1C7C23740021CEB3 /* StringTests.swift in Sources */,
-				CA8CD5711B7A9DE300DA8BF7 /* ELFoundationTests.swift in Sources */,
-				17D3490C1D0A24B700D7EBC3 /* StringTests.swift in Sources */,
 				17D3490B1D0A24B400D7EBC3 /* NSThreadTests.swift in Sources */,
+				17D3490C1D0A24B700D7EBC3 /* StringTests.swift in Sources */,
+				CA8CD5711B7A9DE300DA8BF7 /* ELFoundationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,6 +570,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -767,6 +762,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -812,6 +808,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
