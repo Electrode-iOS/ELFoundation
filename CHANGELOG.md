@@ -1,3 +1,21 @@
+# [3.0.0](https://github.com/Electrode-iOS/ELFoundation/releases/tag/v3.0.0)
+
+## New Features
+
+- Added `asyncAfter(delay:)` extension method for `DispatchQueue`
+
+## Fixes
+
+- Avoid passing a nil pointer into `NSException.raise`
+
+## Breaking Changes
+
+- Removed unused `queryDictionary` method. use `URLComponents` instead.
+- Removed deprecated Array extensions
+- Removed `NSErrorEnum` since it is obsolete with Swift's `Error` type
+- Removed GUID() since it is just as easy to call `UUID().uuidString` directly
+- Removed unused `pluginIdentifier` methods
+
 # [2.0.1](https://github.com/Electrode-iOS/ELFoundation/releases/tag/v2.0.1)
 
 - Fix missing files in macOS Test target.
