@@ -1,3 +1,7 @@
+# [2.0.1](https://github.com/Electrode-iOS/ELFoundation/releases/tag/v2.0.1)
+
+- Fix missing files in macOS Test target.
+
 # [2.0.0](https://github.com/Electrode-iOS/ELFoundation/releases/tag/v2.0.0)
 
 - Migrate to Swift 3
