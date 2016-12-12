@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		17316C141B174A940019A75C /* ELFoundation.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CACF2A0A1A9614D20084EFAE /* ELFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		17D2293E1DFE4091003FEA78 /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D2293D1DFE4091003FEA78 /* DispatchQueue.swift */; };
 		17D349081D0A246200D7EBC3 /* NSObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D349051D0A246200D7EBC3 /* NSObjectTests.swift */; };
 		17D349091D0A246200D7EBC3 /* NSThreadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D349061D0A246200D7EBC3 /* NSThreadTests.swift */; };
 		17D3490B1D0A24B400D7EBC3 /* NSThreadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D349061D0A246200D7EBC3 /* NSThreadTests.swift */; };
@@ -73,6 +74,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		17D2293D1DFE4091003FEA78 /* DispatchQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
 		17D349051D0A246200D7EBC3 /* NSObjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectTests.swift; sourceTree = "<group>"; };
 		17D349061D0A246200D7EBC3 /* NSThreadTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSThreadTests.swift; sourceTree = "<group>"; };
 		200045841B4CA4FE005C861B /* NSBundleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBundleTests.swift; sourceTree = "<group>"; };
@@ -140,10 +142,11 @@
 		CA8804261A962E7000C00CAE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				CA5C71861AD028D40030B2AC /* Array.swift */,
+				17D2293D1DFE4091003FEA78 /* DispatchQueue.swift */,
 				CA8804271A962E7000C00CAE /* NSBundle.swift */,
 				CA39B1BD1C17661800D1A950 /* NSObject.swift */,
 				CA9B9EB81AB7660A007E2B04 /* NSThread.swift */,
-				CA5C71861AD028D40030B2AC /* Array.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -459,6 +462,7 @@
 				CA8804281A962E7000C00CAE /* NSBundle.swift in Sources */,
 				CA8804401A96327B00C00CAE /* Exceptions.swift in Sources */,
 				CA5C71871AD028D40030B2AC /* Array.swift in Sources */,
+				17D2293E1DFE4091003FEA78 /* DispatchQueue.swift in Sources */,
 				CA9B9EB91AB7660A007E2B04 /* NSThread.swift in Sources */,
 				CA8804431A969F7500C00CAE /* Synchronization.swift in Sources */,
 				CA8CD53B1B7A992C00DA8BF7 /* ObjectAssociation.swift in Sources */,
