@@ -20,6 +20,20 @@
                ReferencedContainer = "container:ELFoundation.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "CA8CD5621B7A9DCB00DA8BF7"
+               BuildableName = "ELFoundation_osxTests.xctest"
+               BlueprintName = "ELFoundation_osxTests"
+               ReferencedContainer = "container:ELFoundation.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -28,7 +42,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "CA8CD5621B7A9DCB00DA8BF7"
+               BuildableName = "ELFoundation_osxTests.xctest"
+               BlueprintName = "ELFoundation_osxTests"
+               ReferencedContainer = "container:ELFoundation.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "CA8CD5591B7A9DCA00DA8BF7"
+            BuildableName = "ELFoundation.framework"
+            BlueprintName = "ELFoundation_osx"
+            ReferencedContainer = "container:ELFoundation.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
