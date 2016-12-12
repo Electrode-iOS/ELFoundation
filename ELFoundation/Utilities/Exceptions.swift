@@ -25,12 +25,13 @@ alternative to assertionFailure(), which blows up tests.
 Example:  exceptionFailure("This object is invalid.  \(obj)")
 */
 public func exceptionFailure(_ message: String) {
+    let args: [CVarArg] = []
+
     if isInUnitTest() {
-        let pointer: UnsafeMutablePointer<Int>? = nil
-        NSException.raise(NSExceptionName(rawValue: ELExceptionFailure), format: message, arguments: CVaListPointer(_fromUnsafeMutablePointer: pointer!))
+        NSException.raise(NSExceptionName(rawValue: ELExceptionFailure), format: message, arguments: getVaList(args))
     } else {
         #if DEBUG
-        NSException.raise(ELExceptionFailure, format: message, arguments: CVaListPointer(_fromUnsafeMutablePointer: nil))
+        NSException.raise(ELExceptionFailure, format: message, arguments: getVaList(args))
         #endif
     }
 }
