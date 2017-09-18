@@ -1,3 +1,7 @@
+# [3.0.2](https://github.com/Electrode-iOS/ELFoundation/releases/tag/v3.0.2)
+
+- Store isInUnitTest value in-memory for efficiency
+
 # [3.0.1](https://github.com/Electrode-iOS/ELFoundation/releases/tag/v3.0.1)
 
 - Use default settings for bitcode
