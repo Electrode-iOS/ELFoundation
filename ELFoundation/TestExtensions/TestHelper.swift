@@ -13,10 +13,18 @@ import Foundation
  a unit test.
 */
 public func isInUnitTest() -> Bool {
-    if ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil {
-        return true
+    struct Holder {
+        
+        /// Stored value after first calculation.
+        static var isInUnitTests: Bool!
     }
-    return false
+    
+    // Make sure stored value isn't nil before function returns
+    if Holder.isInUnitTests == nil {
+        Holder.isInUnitTests = ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil
+    }
+    
+    return Holder.isInUnitTests
 }
 
 private enum WaitConditionError: Error {
