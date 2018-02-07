@@ -16,6 +16,6 @@ public extension NSObject {
     
     /// Returns the NSBundle containing self's class.
     public func bundle() -> Bundle {
-        return type(of: self).bundle()
+        return Swift.type(of: self).bundle()
     }
 }
