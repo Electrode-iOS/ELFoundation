@@ -10,19 +10,19 @@ import XCTest
 import ELFoundation
 
 class Foo: NSObject {
-    dynamic func returnsOne() -> Int {
+    @objc dynamic func returnsOne() -> Int {
         return 1
     }
     
-    dynamic class func returnsThree() -> Int {
+    @objc dynamic class func returnsThree() -> Int {
         return 3
     }
 
-    dynamic func returnsTwo() -> Int {
+    @objc dynamic func returnsTwo() -> Int {
         return 2
     }
     
-    dynamic class func returnsFour() -> Int {
+    @objc dynamic class func returnsFour() -> Int {
         return 4
     }
 }
