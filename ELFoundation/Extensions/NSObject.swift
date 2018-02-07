@@ -10,12 +10,12 @@ import Foundation
 
 public extension NSObject {
     /// Returns the NSBundle containing self's class.
-    public static func bundle() -> Bundle {
+    @objc public static func bundle() -> Bundle {
         return Bundle(for: self)
     }
     
     /// Returns the NSBundle containing self's class.
-    public func bundle() -> Bundle {
+    @objc public func bundle() -> Bundle {
         return Swift.type(of: self).bundle()
     }
 }
