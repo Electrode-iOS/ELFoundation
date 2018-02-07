@@ -22,12 +22,12 @@ public extension NSObject {
             let originalMethod = class_getClassMethod(c, originalSelector)
             let swizzledMethod = class_getClassMethod(c, swizzledSelector)
             
-            let didAddMethod = class_addMethod(c, originalSelector, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod))
+            let didAddMethod = class_addMethod(c, originalSelector, method_getImplementation(swizzledMethod!), method_getTypeEncoding(swizzledMethod!))
             
             if didAddMethod {
-                class_replaceMethod(c, swizzledSelector, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod))
+                class_replaceMethod(c, swizzledSelector, method_getImplementation(originalMethod!), method_getTypeEncoding(originalMethod!))
             } else {
-                method_exchangeImplementations(originalMethod, swizzledMethod);
+                method_exchangeImplementations(originalMethod!, swizzledMethod!);
             }
         }
     }
@@ -37,12 +37,12 @@ public extension NSObject {
         let originalMethod = class_getInstanceMethod(self, originalSelector)
         let swizzledMethod = class_getInstanceMethod(self, swizzledSelector)
         
-        let didAddMethod = class_addMethod(self, originalSelector, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod))
+        let didAddMethod = class_addMethod(self, originalSelector, method_getImplementation(swizzledMethod!), method_getTypeEncoding(swizzledMethod!))
         
         if didAddMethod {
-            class_replaceMethod(self, swizzledSelector, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod))
+            class_replaceMethod(self, swizzledSelector, method_getImplementation(originalMethod!), method_getTypeEncoding(originalMethod!))
         } else {
-            method_exchangeImplementations(originalMethod, swizzledMethod);
+            method_exchangeImplementations(originalMethod!, swizzledMethod!);
         }
     }
     
