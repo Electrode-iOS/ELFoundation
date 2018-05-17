@@ -1,3 +1,7 @@
+# [4.0.1](https://github.com/Electrode-iOS/ELFoundation/releases/tag/v4.0.1)
+
+- Update to Xcode 9.3's recommended project settings
+
 # [4.0.0](https://github.com/Electrode-iOS/ELFoundation/releases/tag/v4.0.0)
 
 - Migrate to Swift 4
