@@ -65,7 +65,7 @@ class ELFoundationTests: XCTestCase {
         let storedValue = "O'HAI"
         let key = UnsafeRawPointer("AnAssociationkey")
         setAssociatedObject(bar, value: storedValue, associativeKey: key, policy: objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
-        let retrievedValue = getAssociatedObject(bar, associativeKey: key) as String!
+        let retrievedValue = getAssociatedObject(bar, associativeKey: key) as String?
         XCTAssertTrue(retrievedValue == storedValue)
     }
     
