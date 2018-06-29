@@ -1,4 +1,5 @@
 language: objective-c
 osx_image: xcode9.3
 script:
-   - xcodebuild -project ELFoundation.xcodeproj -scheme ELFoundation -sdk iphonesimulator test -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.1' CODE_SIGNING_REQUIRED=NO
+   - xcodebuild -project ELFoundation.xcodeproj -scheme ELFoundation -sdk iphonesimulator clean test -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.1' CODE_SIGNING_REQUIRED=NO
+   - xcodebuild -project ELFoundation.xcodeproj -scheme ELFoundation_static -sdk iphonesimulator clean build -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.1' CODE_SIGNING_REQUIRED=NO
