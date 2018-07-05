@@ -1,0 +1,10 @@
+module ELFoundation {
+    umbrella header "ELFoundation.h"
+    
+    export *
+}
+
+module ELFoundation.Swift {
+    header "ELFoundation-Swift.h"
+    requires objc
+}
