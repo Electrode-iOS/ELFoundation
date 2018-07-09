@@ -24,8 +24,8 @@ github "Electrode-iOS/ELFoundation"
 Install by adding `ELFoundation.xcodeproj` to your project and configuring your target to link `ELFoundation.framework` from `ELFoundation` target.
 
 There are two target that builds `ELFoundation.framework`.
-1. `ELFoundation`: Creates dynamicly linked `ELFoundation.framework.`
-2. `ELFoundation_static`: Creates staticly linked `ELFoundation.framework`.
+1. `ELFoundation`: Creates dynamically linked `ELFoundation.framework.`
+2. `ELFoundation_static`: Creates statically linked `ELFoundation.framework`.
 
 Both targets build the same product (`ELFoundation.framework`), thus linking the same app against both `ELFoundation` and `ELFoundation_static` should be avoided.
 
