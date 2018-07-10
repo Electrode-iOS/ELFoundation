@@ -1,3 +1,7 @@
+# [4.1.0](https://github.com/Electrode-iOS/ELFoundation/releases/tag/v4.1.0)
+
+- Add a target that builds a static framework.
+
 # [4.0.1](https://github.com/Electrode-iOS/ELFoundation/releases/tag/v4.0.1)
 
 - Update to Xcode 9.3's recommended project settings
