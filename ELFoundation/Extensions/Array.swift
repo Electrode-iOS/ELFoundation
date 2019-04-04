@@ -84,7 +84,7 @@ public extension Array where Element : Equatable {
      Removes each occurrence of `element` from this array.
      */
     mutating func removeElement(_ element: Element) {
-        while let index = self.index(of: element) {
+        while let index = self.firstIndex(of: element) {
             self.remove(at: index)
         }
     }

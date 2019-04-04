@@ -21,7 +21,7 @@ public extension Thread {
      - parameter locale: The locale for the date formatter.
      - returns: The date formatter.
      */
-    public class func dateFormatter(_ format: String, locale: Locale? = Locale.current) -> DateFormatter {
+    class func dateFormatter(_ format: String, locale: Locale? = Locale.current) -> DateFormatter {
         let threadDictionary = Thread.current.threadDictionary
 
         var cache: Dictionary<String, DateFormatter>? = threadDictionary.object(forKey: formatterCacheKey) as? Dictionary<String, DateFormatter>

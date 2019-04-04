@@ -16,7 +16,7 @@ public extension Bundle {
     
      Example: com.walmartlabs.thgfoundation
     */
-    public func reverseBundleIdentifier() -> String? {
+    func reverseBundleIdentifier() -> String? {
         if let id = bundleIdentifier {
             let components: [String] = id.components(separatedBy: ".")
             let reverseComponents = Array(components.reversed())
