@@ -7,7 +7,7 @@ ELFoundation is a collection of Swift utilities for iOS development.
 
 ## Requirements
 
-ELFoundation requires Swift 4 and Xcode 9.2.
+ELFoundation requires Swift 5 and Xcode 10.2.
 
 ## Installation
 
