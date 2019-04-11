@@ -1,3 +1,7 @@
+# [5.0.0](https://github.com/Electrode-iOS/ELFoundation/releases/tag/v5.0.0)
+
+- Migrate to Swift 5
+
 # [4.1.0](https://github.com/Electrode-iOS/ELFoundation/releases/tag/v4.1.0)
 
 - Add a target that builds a static framework.
