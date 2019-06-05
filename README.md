@@ -33,7 +33,6 @@ Both targets build the same product (`ELFoundation.framework`), thus linking the
 
 * `exceptionFailure` - A replacement for assertionFailure, usable in tests.
 * `synchronized<T>` - Akin to @synchronized() in Objective-C.
-* `Spinlock` - A basic spinlock implementation for synchronization.
 * `Object Association` - Objective-C style object association.
 * `Swizzling` - Objective-C style swizzling.
 * `Array (extensions)` - Handy extensions.
